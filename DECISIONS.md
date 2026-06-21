@@ -69,5 +69,8 @@
 
 ## 5. Ссылки на репозиторий и деплой
 *   **GitHub (Актуальный):** [https://github.com/xp2bmdgmwc-boop/peruquois](https://github.com/xp2bmdgmwc-boop/peruquois)
-*   **Vercel (Актуальный):** [https://peruquois.vercel.app](https://peruquois.vercel.app)
+*   **Vercel (Главная):** [https://peruquois.vercel.app](https://peruquois.vercel.app)
+*   **Vercel (Концерт Кремль):** [https://peruquois.vercel.app/ru/kremlin/](https://peruquois.vercel.app/ru/kremlin/)
+*   **Vercel (Биография - Kinfolk Style):** [https://peruquois.vercel.app/ru/bio/](https://peruquois.vercel.app/ru/bio/)
+*   **Vercel (Музыка - Deva Premal Style):** [https://peruquois.vercel.app/ru/audio/](https://peruquois.vercel.app/ru/audio/)
 
