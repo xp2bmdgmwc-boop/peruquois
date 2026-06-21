@@ -1,0 +1,321 @@
+/* Kinfolk-inspired Magazine Style biography stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-bg: #f5f3f0;
+  --color-text: #1d1c1a;
+  --color-text-muted: #736e67;
+  --color-accent: #a3825e;
+  --color-border: rgba(29, 28, 26, 0.08);
+  
+  --font-headings: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+  
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header / Nav */
+header {
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background-color: rgba(245, 243, 240, 0.9);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.nav-container {
+  max-w: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-headings);
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 6px;
+  color: var(--color-text);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--color-accent);
+}
+
+.back-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--color-text);
+}
+
+/* Layout container */
+main {
+  max-w: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+/* Editorial Title */
+.bio-hero {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.bio-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.bio-title {
+  font-family: var(--font-headings);
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 2rem;
+}
+
+.bio-subtitle {
+  font-family: var(--font-headings);
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Asymmetric Editorial Section */
+.editorial-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 6rem;
+  margin-bottom: 8rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .editorial-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.editorial-quote {
+  font-family: var(--font-headings);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  line-height: 1.4;
+  font-weight: 300;
+  color: var(--color-text);
+  border-left: 2px solid var(--color-accent);
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+.editorial-quote cite {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-text-muted);
+  margin-top: 1.5rem;
+  font-style: normal;
+}
+
+.editorial-text h2 {
+  font-family: var(--font-headings);
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.editorial-text p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  max-width: 65ch;
+}
+
+/* Image Grid Placeholder (Kinfolk Editorial Layout) */
+.gallery-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-item {
+  background: #ebe9e5;
+  aspect-ratio: 4/5;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+}
+
+.gallery-item::after {
+  content: 'PORTRAIT';
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: rgba(29, 28, 26, 0.2);
+}
+
+/* Minimalist Discography / Index List */
+.index-section {
+  border-top: 1px solid var(--color-border);
+  padding-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+.index-header {
+  margin-bottom: 4rem;
+}
+
+.index-header h2 {
+  font-family: var(--font-headings);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .index-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.index-list {
+  list-style: none;
+}
+
+.index-item {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.index-item:first-child {
+  padding-top: 0;
+}
+
+.index-name {
+  font-family: var(--font-headings);
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.index-meta {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-text-muted);
+}
+
+/* Testimonials / Quote Slider Block */
+.reviews-section {
+  border-top: 1px solid var(--color-border);
+  padding-top: 6rem;
+}
+
+.review-quote-block {
+  max-width: 800px;
+  margin: 0 auto 6rem;
+  text-align: center;
+}
+
+.review-quote-block p {
+  font-family: var(--font-headings);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.review-quote-block cite {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-accent);
+  font-style: normal;
+}
+
+/* Footer style */
+footer {
+  border-top: 1px solid var(--color-border);
+  padding: 6rem 2rem;
+  text-align: center;
+  background-color: #ebe9e5;
+}
+
+.footer-logo {
+  font-family: var(--font-headings);
+  font-size: 2.2rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-text-muted);
+}

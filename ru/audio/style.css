@@ -1,0 +1,332 @@
+/* Deva Premal & Miten inspired Music page stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-bg: #FAF9F6;
+  --color-surface: #FFFFFF;
+  --color-text: #2B2927;
+  --color-text-muted: #7E7872;
+  --color-gold: #C5A059;
+  --color-gold-light: rgba(197, 160, 89, 0.1);
+  --color-border: rgba(197, 160, 89, 0.15);
+  
+  --font-headings: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+  
+  --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header / Nav */
+header {
+  border-bottom: 1px solid var(--color-border);
+  background-color: rgba(250, 249, 246, 0.9);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-w: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-headings);
+  font-size: 1.6rem;
+  letter-spacing: 6px;
+  color: var(--color-text);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--color-gold);
+}
+
+.back-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--color-gold);
+}
+
+/* Page Wrapper */
+main {
+  max-w: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+/* Hero Section */
+.music-hero {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.music-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.music-title {
+  font-family: var(--font-headings);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.music-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Centralized Audio Player */
+.central-player {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-bottom: 6rem;
+  box-shadow: 0 10px 30px rgba(197, 160, 89, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .central-player {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+}
+
+.player-art {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eee3d1, #d4c1a5);
+  border: 2px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--color-gold);
+  animation: rotateArt 20s linear infinite;
+  animation-play-state: paused;
+}
+
+.central-player.playing .player-art {
+  animation-play-state: running;
+}
+
+@keyframes rotateArt {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.player-controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.track-info h3 {
+  font-family: var(--font-headings);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.track-info p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-text-muted);
+}
+
+.controls-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.play-btn {
+  background: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  color: var(--color-bg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.play-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.3);
+}
+
+.progress-bar-wrap {
+  flex: 1;
+  height: 4px;
+  background: #eeece8;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress-bar-fill {
+  width: 35%;
+  height: 100%;
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+
+.track-time {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  min-width: 35px;
+}
+
+/* Albums Grid */
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .albums-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .albums-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.album-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 2rem;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-gold);
+  box-shadow: 0 15px 35px rgba(197, 160, 89, 0.08);
+}
+
+.album-cover {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #f2edd7, #d5c8a4);
+  border: 1px solid rgba(197, 160, 89, 0.1);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(197, 160, 89, 0.2);
+  font-family: var(--font-headings);
+  font-size: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.album-cover::after {
+  content: '♫';
+}
+
+.album-card h3 {
+  font-family: var(--font-headings);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.album-card p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.8rem;
+  min-height: 2.5rem;
+}
+
+.album-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  border-top: 1px solid #f2edd7;
+  padding-top: 1.5rem;
+}
+
+.streaming-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.streaming-link:hover {
+  background: var(--color-gold-light);
+  border-color: var(--color-gold);
+}

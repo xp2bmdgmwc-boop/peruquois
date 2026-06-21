@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Музыка и практики Перукуа. Альбомы, исцеляющие мантры, музыка для женских кругов и родов.">
+  <title>Перукуа — Музыка & Практики (Deva Premal Style)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo">PERUQUOIS<span>.</span></a>
+      <a href="/" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Назад на главную
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Music Hero Section -->
+    <section class="music-hero">
+      <span class="music-tag">Голос Земли</span>
+      <h1 class="music-title">Музыка для твоего вдохновения</h1>
+      <p class="music-desc">Погрузитесь в чувственные вибрации исцеляющих мантр и песен от исполнительницы самой женственной музыки на планете.</p>
+    </section>
+
+    <!-- Central Wave Player -->
+    <section class="central-player" id="mainPlayer">
+      <div class="player-art"></div>
+      <div class="player-controls">
+        <div class="track-info">
+          <h3>Я Женщина (I Am Woman)</h3>
+          <p>Перукуа · Альбом «Я Женщина»</p>
+        </div>
+        <div class="controls-row">
+          <button class="play-btn" id="playBtn" aria-label="Play">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="playIcon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </button>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <span class="track-time">1:34 / 4:32</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Albums Grid -->
+    <section class="albums-section">
+      <div class="music-hero" style="margin-bottom: 4rem;">
+        <span class="music-tag">Дискография</span>
+        <h2 class="music-title" style="font-size: 2.2rem;">Альбомы и сборники</h2>
+      </div>
+
+      <div class="albums-grid">
+        <!-- Album 1 -->
+        <div class="album-card">
+          <div class="album-cover"></div>
+          <h3>Музыка Женского Круга</h3>
+          <p>Бесплатный сборник песен для женских кругов, практик и девичников.</p>
+          <div class="album-links">
+            <a href="#" class="streaming-link" title="Spotify">SP</a>
+            <a href="#" class="streaming-link" title="Apple Music">AP</a>
+            <a href="#" class="streaming-link" title="YouTube">YT</a>
+          </div>
+        </div>
+
+        <!-- Album 2 -->
+        <div class="album-card">
+          <div class="album-cover"></div>
+          <h3>Я Женщина</h3>
+          <p>Знаковый альбом Перукуа, который лучше всего характеризует ее послание миру.</p>
+          <div class="album-links">
+            <a href="#" class="streaming-link" title="Spotify">SP</a>
+            <a href="#" class="streaming-link" title="Apple Music">AP</a>
+            <a href="#" class="streaming-link" title="YouTube">YT</a>
+          </div>
+        </div>
+
+        <!-- Album 3 -->
+        <div class="album-card">
+          <div class="album-cover"></div>
+          <h3>ОНА</h3>
+          <p>Запись уникального соло-мюзикла «ОНА», основанного на автобиографии певицы.</p>
+          <div class="album-links">
+            <a href="#" class="streaming-link" title="Spotify">SP</a>
+            <a href="#" class="streaming-link" title="Apple Music">AP</a>
+            <a href="#" class="streaming-link" title="YouTube">YT</a>
+          </div>
+        </div>
+
+        <!-- Album 4 -->
+        <div class="album-card">
+          <div class="album-cover"></div>
+          <h3>Исцеляющие Мантры</h3>
+          <p>Новые исцеляющие женские мантры от Перукуа: древность встречается с духом нового века.</p>
+          <div class="album-links">
+            <a href="#" class="streaming-link" title="Spotify">SP</a>
+            <a href="#" class="streaming-link" title="Apple Music">AP</a>
+            <a href="#" class="streaming-link" title="YouTube">YT</a>
+          </div>
+        </div>
+
+        <!-- Album 5 -->
+        <div class="album-card">
+          <div class="album-cover"></div>
+          <h3>Первородный Источник</h3>
+          <p>Глубокий мистический альбом-притча в 10 композициях, связанных общей историей.</p>
+          <div class="album-links">
+            <a href="#" class="streaming-link" title="Spotify">SP</a>
+            <a href="#" class="streaming-link" title="Apple Music">AP</a>
+            <a href="#" class="streaming-link" title="YouTube">YT</a>
+          </div>
+        </div>
+
+        <!-- Album 6 -->
+        <div class="album-card">
+          <div class="album-cover"></div>
+          <h3>Музыка для родов</h3>
+          <p>Специально подобранный сборник медитативных песен для мягких и гармоничных родов.</p>
+          <div class="album-links">
+            <a href="#" class="streaming-link" title="Spotify">SP</a>
+            <a href="#" class="streaming-link" title="Apple Music">AP</a>
+            <a href="#" class="streaming-link" title="YouTube">YT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Play/Pause button interaction logic
+    const playBtn = document.getElementById('playBtn');
+    const player = document.getElementById('mainPlayer');
+    const playIcon = document.getElementById('playIcon');
+
+    playBtn.addEventListener('click', () => {
+      const isPlaying = player.classList.contains('playing');
+      if (isPlaying) {
+        player.classList.remove('playing');
+        playIcon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"></polygon>';
+      } else {
+        player.classList.add('playing');
+        playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
+      }
+    });
+  </script>
+</body>
+</html>
