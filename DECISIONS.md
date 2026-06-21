@@ -64,3 +64,10 @@
 3.  **Оптимизация производительности (TTFB):**
     *   Настроить кэширование статических блоков Parser 3 на уровне сервера.
     *   Оптимизировать маршрутизацию прокси-сервера для снижения TTFB с 2.1с до < 300мс.
+
+---
+
+## 5. Ссылки на репозиторий и деплой
+*   **GitHub (Актуальный):** [https://github.com/xp2bmdgmwc-boop/peruquois](https://github.com/xp2bmdgmwc-boop/peruquois)
+*   **Vercel (Актуальный):** [https://peruquois.vercel.app](https://peruquois.vercel.app)
+
