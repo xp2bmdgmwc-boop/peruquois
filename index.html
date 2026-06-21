@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-language-id="2">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Перукуа — Голос Матери Земли. Современный редизайн официального сайта.">
-  <title>Перукуа — Голос Матери Земли (Redesign Concept)</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8"/>
+  <title>Перукуа — Голос Матери Земли</title>
+  <meta name="description" content="Перукуа – Голос Матери Земли"/>
+  <meta name="keywords" content="Перукуа сокровенная женственность йога мантра голос матери земли"/>
+  <meta name="facebook-domain-verification" content="kdbkjkzxedlanq5jg2w0dafw5hteee" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/site-ru.webmanifest?v=1">
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+  <meta name="apple-mobile-web-app-title" content="Peruquois">
+  <meta name="application-name" content="Peruquois">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/style.css"/>
+  <script src="/js/core.js"></script>
+  <script src="/js/stats.js"></script>
 </head>
 <body>
 
@@ -16,197 +29,485 @@
     <div class="energy-blob blob-3"></div>
   </div>
 
-  <!-- Transparent Floating Header -->
-  <header>
-    <div class="nav-container">
-      <a href="#" class="logo">PERUQUOIS<span>.</span></a>
-      <ul class="nav-menu">
-        <li><a href="#about" class="nav-link">Био</a></li>
-        <li><a href="#courses" class="nav-link">Курсы</a></li>
-        <li><a href="#music" class="nav-link">Музыка</a></li>
-        <li><a href="#events" class="nav-link">События</a></li>
-      </ul>
-      <button class="nav-cta">Присоединиться</button>
+  <!-- Transparent Floating Header Navigation -->
+  <nav class="nav-main showAnimation">
+    <label for="menuToggle" class="nav-main__toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18"><g fill="#ffffff"><rect width="26" height="4" rx="1"/><rect width="26" height="4" y="7" rx="1"/><rect width="26" height="4" y="14" rx="1"/></g></svg>
+    </label>
+    <input type="checkbox" id="menuToggle"/>
+    <a href="/ru/" class="js-link nav-main__logo">Перукуа</a>
+    <ul class="nav-main__items">
+      <li><a href="/ru/bio/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="7">Био</a></li>
+      <li><a href="/ru/audio/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="1">Музыка</a></li>
+      <li><a href="/ru/video/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="2">Видео</a></li>
+      <li><a href="/ru/courses/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="8">Онлайн-курсы</a></li>
+      <li><a href="/ru/events/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="10">События</a></li>
+      <li><a href="/ru/contacts/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="40">Контакты</a></li>
+    </ul>
+    <div class="nav-right">
+      <a title="Мои заказы" href="/ru/user/" class="js-link nav-main__account">Мои заказы</a>
+      <a title="" href="/ru/cart/" class="js-link nav-main__cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"/></svg>
+        <sup id="js-cartCounter" style="display: none;">0</sup>
+      </a>
     </div>
-  </header>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-tag">Музыкальный феномен & женский лидер</div>
-    <h1 class="hero-title">Раскрой свою <em>внутреннюю женщину</em> и силу своего голоса</h1>
-    <p class="hero-desc">Практики от ведущей крупнейших семинаров для женщин в мире. 27 лет опыта на 5 континентах, помогающего раскрыть истинную женственность и освободиться от внутренних барьеров.</p>
-    <div class="hero-actions">
-      <a href="#courses" class="btn btn-primary">Посмотреть курсы</a>
-      <a href="#music" class="btn btn-secondary">Слушать музыку</a>
+  <section class="intro" style="background-image: linear-gradient(to bottom, rgba(18, 16, 15, 0.4), rgba(18, 16, 15, 0.95)), url(/i/banners/5.jpg);">
+    <div class="intro-container">
+      <span class="hero-tag">Музыкальный феномен & женский лидер</span>
+      <h1 class="intro__header">Почувствуй свою женственность</h1>
+      <p class="hero-desc">Практики от ведущей крупнейших семинаров для женщин в мире. 27 лет опыта на 5 континентах, помогающего раскрыть истинную женственность и освободиться от внутренних барьеров.</p>
+      <div class="hero-actions">
+        <a href="#courses" class="btn btn-primary">Посмотреть курсы</a>
+        <a href="#music" class="btn btn-secondary">Слушать музыку</a>
+      </div>
     </div>
   </section>
 
   <main>
-    <!-- Courses Section -->
-    <section id="courses">
+    <!-- Bio & Stats Section -->
+    <section class="featureSlide featureSlide__bio">
       <div class="section-header">
-        <span class="section-tag">Онлайн-практики</span>
-        <h2 class="section-title">Почувствуй настоящую себя, свободную от травм и сомнений</h2>
+        <span class="section-tag">О Перукуа</span>
+        <h2 class="section-title">Раскрой свою внутреннюю женщину</h2>
+        <p class="section-subtitle">с ведущей крупнейших семинаров для женщин в мире</p>
       </div>
       
-      <div class="courses-grid">
-        <!-- Course 1 -->
-        <div class="course-card">
-          <div>
-            <div class="course-badge">Флагманский курс</div>
-            <div class="course-content">
-              <h3>Раскрой Голос Своей Силы</h3>
-              <p>Легендарная программа активации голоса, как важнейшего инструмента управления своей жизнью, эмоциями и внутренней энергией.</p>
-            </div>
-          </div>
-          <div class="course-footer">
-            <div class="course-meta">
-              <span class="meta-label">Длительность</span>
-              <span class="meta-value">21 день</span>
-            </div>
-            <div class="course-meta">
-              <span class="meta-label">Стоимость</span>
-              <span class="meta-value">9 900 ₽</span>
-            </div>
-            <button class="course-cta" aria-label="Подробнее">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-          </div>
+      <div class="bio-layout">
+        <ul class="feature">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M149.8 369l-7.9 46.3c-1.8 10.6 2.5 21.1 11.2 27.4 4.9 3.5 10.7 5.4 16.4 5.4 4.4 0 8.9-1.1 13-3.3L224 423l41.5 21.8c9.5 5 20.8 4.2 29.5-2.1 8.7-6.3 13-16.8 11.2-27.4l-7.9-46.3 33.5-32.7c7.7-7.5 10.4-18.5 7.1-28.7s-12-17.5-22.6-19l-46.4-6.8-20.7-42.1C244.3 230 234.7 224 224 224s-20.3 6-25 15.6l-20.7 42.1-46.4 6.8c-10.6 1.5-19.3 8.8-22.6 19s-.6 21.2 7.1 28.7l33.4 32.8zm49.6-58.1L224 261l24.6 49.9 55 8-39.8 38.9 9.4 54.8-49.2-25.8-49.2 25.9 9.4-54.8-39.8-38.9 55-8.1zM400 64h-48V8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v56H128V8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v56H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm16 400c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V192h384v272zm0-304H32v-48c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v48z"/></svg>
+            <span>27 лет проводит семинары для женщин в Европе, Америке, Азии и Австралии</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor"><path d="M544 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM320 256c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm0-192c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80zm244 192h-40c-15.2 0-29.3 4.8-41.1 12.9 9.4 6.4 17.9 13.9 25.4 22.4 4.9-2.1 10.2-3.3 15.7-3.3h40c24.2 0 44 21.5 44 48 0 8.8 7.2 16 16 16s16-7.2 16-16c0-44.1-34.1-80-76-80zM96 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm304.1 180c-33.4 0-41.7 12-80.1 12-38.4 0-46.7-12-80.1-12-36.3 0-71.6 16.2-92.3 46.9-12.4 18.4-19.6 40.5-19.6 64.3V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-44.8c0-23.8-7.2-45.9-19.6-64.3-20.7-30.7-56-46.9-92.3-46.9zM480 432c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16v-44.8c0-16.6 4.9-32.7 14.1-46.4 13.8-20.5 38.4-32.8 65.7-32.8 27.4 0 37.2 12 80.2 12s52.8-12 80.1-12c27.3 0 51.9 12.3 65.7 32.8 9.2 13.7 14.1 29.8 14.1 46.4V432zM157.1 268.9c-11.9-8.1-26-12.9-41.1-12.9H76c-41.9 0-76 35.9-76 80 0 8.8 7.2 16 16 16s16-7.2 16-16c0-26.5 19.8-48 44-48h40c5.5 0 10.8 1.2 15.7 3.3 7.5-8.5 16.1-16 25.4-22.4z"/></svg>
+            <span>Ведущая крупнейших в мире практических семинаров раскрытия женственности</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="currentColor"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z"/></svg>
+            <span>Женщины из 63 стран были участницами семинаров Перукуа</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z"/></svg>
+            <span>98 из 100 женщин достигли значительных личных изменений после курсов и семинаров</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor"><path d="M463.7 0H112.3c-4.2 0-8.1 2.2-10.3 5.8L1.7 168.6c-2.7 4.4-2.2 10.1 1.2 14l276 325.2c4.8 5.6 13.4 5.6 18.2 0l276-325.2c3.4-3.9 3.8-9.6 1.2-14L474 5.8c-2.2-3.6-6.1-5.8-10.3-5.8zm-13.6 36l74.3 124h-83L384.6 36h65.5zM345 36l56.8 124H174.1L231 36h114zm-219.1 0h65.5l-56.8 124h-83l74.3-124zM61.2 192h73L216 384 61.2 192zm112 0h229.5L288 455.8 173.2 192zM360 384l81.8-192h73L360 384z"/></svg>
+            <span>Автор более 40 уникальных курсов и практик</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M509.05273,219.03853l-39.71289-16.56934-16.55859-39.73866a5.32506,5.32506,0,0,0-9.541,0l-16.56054,39.73866-39.71094,16.56934a5.33947,5.33947,0,0,0,0,9.54721L426.67969,245.157l16.56054,39.73671a5.3235,5.3235,0,0,0,9.541,0L469.33984,245.157l39.71289-16.57129a5.33947,5.33947,0,0,0,0-9.54721ZM364.30049,267.08,259.38106,251.77833,212.46892,156.549a22.735,22.735,0,0,0-20.59634-12.7878A22.40581,22.40581,0,0,0,171.37,156.549l-46.91214,95.22933L19.6322,267.08C.84859,269.76557-6.65235,293.06155,6.94311,306.349l75.91578,74.05684L64.85663,485.01914A23.00313,23.00313,0,0,0,87.45322,512a22.60025,22.60025,0,0,0,10.68884-2.6856l93.82428-49.37123,93.82429,49.37123A23.38328,23.38328,0,0,0,296.38571,512a23.09547,23.09547,0,0,0,22.69035-26.88718l-17.9085-104.61329,75.91578-74.05685C390.6788,293.06155,383.0841,269.87487,364.30049,267.08ZM266.78824,369.28873l17.596,103.14558-92.51162-48.7779L99.361,472.43431l17.596-103.14558L42.26,296.1531l103.388-15.08305,46.31831-93.83969,46.19331,93.83969L341.57888,296.1531ZM423.1875,81.33009,374.59375,57.01744,350.3125,8.17327c-5.40625-10.89769-23.21875-10.89769-28.625,0L297.40625,56.81419,248.8125,81.12683A16.04689,16.04689,0,0,0,240,95.433a16.46336,16.46336,0,0,0,8.8125,14.50941L297.40625,134.255,321.6875,182.896A16.07056,16.07056,0,0,0,336,191.79235a15.87374,15.87374,0,0,0,14.3125-8.8964L374.59375,134.255l48.59375-24.31264a16.0185,16.0185,0,0,0,0-28.6123ZM355.5,107.94109a16.19316,16.19316,0,0,0-7.1875,7.2078L336,139.86805l-12.3125-24.71916a16.75685,16.75685,0,0,0-7.1875-7.2078L291.8125,95.54243,316.5,83.12813a16.11584,16.11584,0,0,0,7.1875-7.2078L336,51.20117l12.3125,24.71916a16.59161,16.59161,0,0,0,7.1875,7.2078l24.6875,12.4143Z"/></svg>
+            <span>Мудрость и творчество Перукуа – источник вдохновения для более миллиона женщин</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor"><path d="M232 96h-16a8 8 0 0 0-8 8v304a8 8 0 0 0 8 8h16a8 8 0 0 0 8-8V104a8 8 0 0 0-8-8zm-96 96h-16a8 8 0 0 0-8 8v112a8 8 0 0 0 8 8h16a8 8 0 0 0 8-8V200a8 8 0 0 0-8-8zm-96 32H24a8 8 0 0 0-8 8v48a8 8 0 0 0 8 8h16a8 8 0 0 0 8-8v-48a8 8 0 0 0-8-8zm384-96h-16a8 8 0 0 0-8 8v240a8 8 0 0 0 8 8h16a8 8 0 0 0 8-8V136a8 8 0 0 0-8-8zm192 96h-16a8 8 0 0 0-8 8v48a8 8 0 0 0 8 8h16a8 8 0 0 0 8-8v-48a8 8 0 0 0-8-8zM520 64h-16a8 8 0 0 0-8 8v368a8 8 0 0 0 8 8h16a8 8 0 0 0 8-8V72a8 8 0 0 0-8-8zM328 0h-16a8 8 0 0 0-8 8v496a8 8 0 0 0 8 8h16a8 8 0 0 0 8-8V8a8 8 0 0 0-8-8z"/></svg>
+            <span>Источник невероятного голоса, имеющего трансформирующую силу</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M475.78 33.5a122.38 122.38 0 0 0-170.45 2.13l-28.77 28.68a121 121 0 0 0-35.66 85.08L12.06 406.85a47.88 47.88 0 0 0 2 65.71l25.46 25.38a48.27 48.27 0 0 0 65.93 2l150.42-133.6V504a8 8 0 0 0 8 8H280a8 8 0 0 0 8-8V338l75.85-66.08a121.82 121.82 0 0 0 85.37-35.54l25.09-25C523 162.86 525.64 80.79 475.78 33.5zM84.25 476a16.08 16.08 0 0 1-22-.68l-25.44-25.39a16 16 0 0 1-.72-21.86l219.39-246.83 76.4 76.13zM426.5 213.74a89.56 89.56 0 0 1-62.92 26.17h-3.8L273 153.42v-3.78a88.92 88.92 0 0 1 26.27-62.7l11.06-11 127.24 126.77zm33.28-34.14L333.52 53.77A89.34 89.34 0 0 1 459.78 179.6z"/></svg>
+            <span>31 год успешной музыкальной карьеры</span>
+          </li>
+        </ul>
+        <div class="bio-visual">
+          <img src="/i/features/bio/header-1.jpg" alt="Перукуа" class="bio-hero-img"/>
         </div>
+      </div>
 
-        <!-- Course 2 -->
-        <div class="course-card">
-          <div>
-            <div class="course-badge">Практика в дар</div>
-            <div class="course-content">
-              <h3>Ты не Одна</h3>
-              <p>Короткая медитативная практика, которая вернет вам чувство безопасности, внутренней тишины и доверия к окружающему миру.</p>
+      <!-- TV & Media partners -->
+      <div class="media-partners">
+        <h4 class="bio__media-header">Перукуа – гость и эксперт на ведущих каналах страны</h4>
+        <ul class="bio__media">
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 60" fill="currentColor"><path d="M2.154 14.923L0 22.615l27.077-9.23-12 43.538 16.615-4.615L46.154 0l-44 14.923zM14.924 20L4 60l8.308-2.308 11.23-40.615L14.923 20z"/></svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 60" fill="currentColor"><g fill="none"><path fill="#9A9A9A" d="M0 0h196.7v59.8H0zM201.2 0h61.1v59.8h-61.1z"/><g fill="#FFF"><path d="M166.2 14.3c-5.7 0-10.4 4-10.4 9.8 0 3.9 2.2 7.3 5.4 9l-5.8 12.7h7.5l5-11.4h2.8v11.4h6.7V14.3h-11.2zm0 5.8h4.5v8.2h-4.5c-2 0-3.6-1.8-3.6-4.1s1.5-4 3.6-4zM145.2 14.3l-11.4 18.4V14.3H127v31.5h5.9l11.3-18.2v18.2h6.7V14.3zM30.3 20.1h-4.5v8.2h4.5c2 0 3.6-1.8 3.6-4.1s-1.6-4-3.6-4zm0-5.8c5.7 0 10.4 4 10.4 9.8 0 5.6-4.7 10.3-10.4 10.3h-4.5v11.4H19V14.3h11.3zm32.1 15.8l-.2-5a5.7 5.7 0 00-5.6-5.7c-3.1 0-5.5 2.5-5.6 5.6 0 1.4-.3 3.1-.3 5 0 2 .2 3.7.3 5a5.7 5.7 0 005.6 5.7c3 0 5.5-2.5 5.6-5.6l.2-5zm-5.8 16.6c-7 0-12.7-5.7-12.7-12.7v-8a12.6 12.6 0 1125.3 0v8c0 7-5.7 12.7-12.6 12.7zm29.8-33.2c-7 0-12.7 4.5-12.6 12.6v8c0 8.2 5.6 12.6 12.6 12.6 3 0 6.4-.6 9.3-1.8L94.2 39c-2.8 1.1-6.1 1.7-7.8 1.7-3 0-5.5-2.5-5.6-5.6l-.2-5 .2-5a5.7 5.7 0 015.6-5.7c1.8 0 5.3.5 8 1.6l1.4-5.7a22 22 0 00-9.4-1.8zm26.3 0c-7 0-12.7 4.5-12.6 12.6v8c0 8.2 5.6 12.6 12.6 12.6 3 0 6.4-.6 9.3-1.8l-1.5-5.9c-2.8 1.1-6.1 1.7-7.8 1.7-3 0-5.5-2.5-5.6-5.6 0-1.4-.3-3.1-.3-5 0-2 .3-3.7.3-5a5.7 5.7 0 015.6-5.7c1.8 0 5.3.5 8 1.6l1.4-5.7a22 22 0 00-9.4-1.8z"/></g><path fill="#FFF" d="M246.3 30.9v6.5h-14V31h14zm.1-16.8l-14 15.8h8.6L255.1 14h-8.7zm1 0v.2l.2-.2h-.2zm7.4 1.7l-7.4 8.3v20h7.4V15.9zm-35-1.7v6.6c1.5.3 2.6 1.6 2.6 3.1 0 2.6-1.8 4.3-4.3 6.3l-9.7 7.8v5.9h5.6l12-10.5a13 13 0 004.8-10c0-6.2-4.9-9.1-11-9.2zm-1 0c-5.4.3-9.8 4.6-10.4 10h7.7v-.3c0-1.6 1.2-3 2.8-3V14zm4.4 22.7l-8 7h15.4v-7h-7.4z"/></g></svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="currentColor"><g fill="none"><path fill="#9A9A9A" d="M0 0h60v60H0z"/><g fill="#FFF"><path d="M59.941 21.118v2.199h-8.07v15.564H41.69V23.316h-8.064v-2.198z"/><path d="M30.935 31.195l.003-.002a5.153 5.153 0 00-1.532-10.075h.018H7.801v17.764h10.184v-7.575h2.965l5.308 7.575 10.63-.001-5.953-7.686zm-9.64-1.91v.001h-3.309v-6.144h3.309v-.002a3.072 3.072 0 110 6.144z"/></g></g></svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147 48" fill="currentColor"><path fill="#9A9A9A" d="M93.4 0h-39c-2.6 0-4.6 2-4.6 4.5v39a4.5 4.5 0 004.5 4.5h39c2.5 0 4.5-2 4.5-4.5v-39c0-2.5-2-4.5-4.4-4.5zm-12 45c0 .9-.3 1.4-1 1.4H67.6c-.8 0-1.1-.5-1.1-1.3V32.5c0-.5.4-1 .9-1h13c.5 0 1 .5 1 1v12.6zm0-29.3c0 .5-.4.9-.9.9h-13a1 1 0 01-1-1V3c0-.8.4-1.3 1.2-1.3h12.5c.8 0 1.2.5 1.2 1.3v12.8zM142.3 0h-39c-2.5 0-4.5 2-4.5 4.5v39a4.5 4.5 0 004.4 4.5h39.1a4.5 4.5 0 004.5-4.5v-39c0-2.5-2-4.5-4.5-4.5zm-27.2 45c0 .9-.3 1.4-1.2 1.4H104a3.4 3.4 0 01-3.7-3.7V18c0-.9.4-1.4 1.2-1.4h12.7c.5 0 .9.4 1 .9v27.6zm30.1-2.3a3.4 3.4 0 01-3.6 3.7h-10.2c-.8 0-1.2-.5-1.2-1.3V17.5c0-.6.4-1 1-1H144c.7 0 1 .5 1 1.3l.1 25zM43.5 0h-39C2 0 0 2 0 4.5v39C0 46 2 48 4.5 48h39c2.5 0 4.5-2 4.5-4.5v-39C48 2 46 0 43.5 0zM16.3 45c0 .9-.3 1.4-1.2 1.4H5.3a3.4 3.4 0 01-3.7-3.7V18c0-.9.3-1.4 1-1.4h12.8c.5 0 1 .4 1 .9v27.6zm30.1-2.3a3.4 3.4 0 01-3.7 3.7H32.6c-.8 0-1.2-.5-1.2-1.3V17.5c0-.6.5-1 1-1h12.9c.8 0 1.1.5 1.2 1.3v25z"/></svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 60" fill="currentColor"><g fill="#9A9A9A"><path d="M151.3 53.2a28 28 0 0010.3-16.5h-15a15 15 0 01-13.7 8.5c-4.4 0-7.8-1.4-10.8-4.4-3-3-4.5-6.6-4.5-10.7s1.5-8 4.5-10.8a15.3 15.3 0 0124.2 3.5h15.4a28 28 0 00-10.4-16A28.7 28.7 0 00133 .6c-8.3 0-15.2 2.9-21 8.7a28.5 28.5 0 00-8.7 21c0 8.3 2.8 15.2 8.6 21a29.2 29.2 0 0039.3 1.9zM61.9.2v14H74v44.6h14V14.3h12.3V.3zM29.8.2C21.6.2 14.6 3.1 8.8 9A28.5 28.5 0 000 30c0 8.2 2.8 15.2 8.7 21a28.5 28.5 0 0021 8.7c7 0 13.3-2.2 18.6-6.6a28 28 0 0010.3-16.4H43.5A15 15 0 0129.8 45c-4.3 0-8-1.4-10.8-4.4-3-3-4.4-6.7-4.4-10.8 0-4 1.4-7.9 4.4-10.7a15.3 15.3 0 0124.2 3.5h15.5a29.6 29.6 0 00-10.4-16A29.6 29.6 0 0029.8.2z"/></g></svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 60" fill="currentColor"><g fill="#9A9A9A"><path d="M14.1 5l13.3-5 24.4 27.8-6 13.2z"/><path d="M27.4 55.1L14 60V5l13.3-5z"/><path d="M0 27.8h51.8l-6 13.2H12.5z"/></g></svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 59" fill="currentColor"><path fill-rule="evenodd" d="M30 .5A29.2 29.2 0 0130 59H0V.5h30zm-2.3 17a12.2 12.2 0 110 24.5 12.2 12.2 0 010-24.5z"/></svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 60" fill="currentColor"><path d="M134.66 41.05c-.62.05-1.09.6-1.1 1.2-.1 1.8 0 3.6-.04 5.4.02.86-.07 1.75.13 2.58.22.6.93.96 1.56.8l7.76-.95c.37-.03.76-.13 1.02-.41.45-.4.37-1.06.41-1.6V42.7c-.01-.64.04-1.3-.14-1.92-.2-.53-.8-.81-1.34-.76l-8.26 1.03zM40.08 31.9c-.35.04-.72.14-.99.39-.27.3-.41.72-.37 1.12v6.44c-.81.14-1.62.24-2.43.3v-5.3c-.02-.6.05-1.26-.28-1.8-.37-.48-1-.57-1.55-.45-2.53.3-5.05.63-7.58.92-.47.06-1 .08-1.35.45-.44.4-.4 1.05-.41 1.59v21.83c.03.61-.05 1.28.31 1.84.22.18.47.4.77.43.68.02 1.34-.1 2.01-.18 2.16-.26 4.33-.54 6.5-.79.46-.04.98-.13 1.27-.53.34-.41.28-1 .3-1.48v-6.45l2.44-.3v6.38c.02.4-.03.9.3 1.21.29.48.92.53 1.42.46l7.71-.95c.44-.05.92-.1 1.27-.4.33-.29.42-.75.4-1.17l-.01-22.9c.01-.5-.02-1.1-.47-1.4-.44-.37-1.04-.22-1.55-.2l-7.71.94zm27.21-3.32c-.49.08-.72.58-.97.97-1.4 2.57-2.82 5.13-4.25 7.69-.07-2.16.01-4.32-.04-6.47.03-.56-.33-1.17-.9-1.33-.77-.08-1.55.08-2.31.17-2.1.26-4.18.5-6.27.77-.4.04-.85.17-1.09.54-.2.28-.24.65-.22 1v20.74c0 .94-.05 1.9.04 2.83.05.47.46.83.9.95.96.06 1.9-.16 2.87-.26l5.85-.72c.5 0 .98-.29 1.21-.73l4.36-7.88c.03 1.98-.01 3.97.01 5.95.02.44-.03.95.29 1.29.23.41.76.57 1.21.49 1.28-.11 2.55-.3 3.84-.46 1.5-.2 3-.34 4.5-.57.55-.07.97-.61.96-1.17V29.11c.02-.48-.02-1.09-.5-1.35-.44-.35-1.03-.24-1.54-.19-2.64.36-5.3.63-7.95 1zm26.57-3.28c-.68 0-1.48.34-1.54 1.1-.03 5.05.03 10.1-.03 15.15-.83.12-1.66.2-2.48.3V27.69c.03-.53-.06-1.21-.58-1.5-.4-.3-.9-.2-1.36-.16-2.29.3-4.58.56-6.88.85-.61.1-1.28.06-1.83.4-.34.33-.5.8-.45 1.27v22.9c.03.37-.03.81.23 1.13.22.23.5.48.85.5.72.01 1.43-.12 2.15-.2l6.88-.85c1.16-.12 2.32-.32 3.49-.38.01 1.15-.05 2.32.04 3.49.1.67.85 1.1 1.5.98.97-.09 1.95-.24 2.91-.35 1.1-.16 2.18-.22 3.25-.43.54-.13.78-.72.94-1.2 1.36-3.95 2.7-7.91 4.07-11.87.18-.49.3-1.12-.04-1.55-.32-.55-1.03-.6-1.58-.62V26.31c-.01-.6.01-1.33-.52-1.75-.45-.35-1.03-.23-1.56-.18-2.49.3-4.97.61-7.46.9zm19.81-2.43c-.61 0-1.07.49-1.24 1.05l-8.29 24.26c-.15.48-.07 1.07.31 1.42.36.4.95.4 1.45.35 2.97-.4 5.95-.72 8.92-1.12.5-.06.8-.53.94-.97.18-.7.33-1.4.49-2.1a76.7 76.7 0 014.26-.55c.2.72.34 1.46.64 2.15.35.5 1 .65 1.57.52 2.31-.3 4.64-.57 6.94-.86.72-.1 1.45-.13 2.15-.28.62-.2 1-.95.81-1.57-.16-.6-.41-1.2-.63-1.79-2.5-6.85-5-13.72-7.52-20.58-.11-.32-.23-.65-.53-.83-.42-.33-1-.26-1.48-.18-2.92.37-5.86.72-8.79 1.08zm20.39-2.52c-.52.01-1.06.21-1.35.67-.33.8-.08 1.68-.03 2.5.45 4.76.9 9.51 1.32 14.27.04.42.1.87.33 1.25.4.51 1.1.54 1.7.46 1.95-.26 3.9-.49 5.86-.72.52-.07 1.07-.14 1.53-.4.4-.37.42-.95.47-1.46.3-3.5.65-7 .97-10.5.17-1.88.3-3.76.54-5.63v-.6c-.2-.39-.43-.87-.9-.97-.96-.09-1.91.08-2.86.2-2.53.3-5.05.63-7.58.93zM1.32 9.12c-.4.04-.85.17-1.09.54-.24.3-.2.7-.22 1.06L0 33.26c.04.48-.08 1.02.22 1.43.15.28.45.4.73.49.97.05 1.91-.16 2.86-.26 1.92-.22 3.84-.48 5.75-.69.36-.06.75-.06 1.03-.33.55-.35.5-1.07.52-1.64-.02-4.76-.02-9.53-.01-14.29l2.43-.3c.02 4.81-.02 9.63.02 14.45-.06.65.39 1.33 1.06 1.41.64.02 1.27-.1 1.89-.17 2.16-.25 4.34-.53 6.5-.79.3-.04.62-.05.9-.18.43-.16.73-.6.72-1.06V7.72c.08-.75-.68-1.44-1.43-1.27-1.17.09-2.33.3-3.5.41L1.32 9.12zm36.72-4.5c-2.9.28-5.84 1.2-8.04 3.19a9.45 9.45 0 00-2.88 7 7.68 7.68 0 001.15 4.58c.57.94 1.5 1.62 2.51 2.04-1.72 2.84-3.44 5.68-5.18 8.52-.3.51-.36 1.19.04 1.66.27.45.89.54 1.38.47 2.99-.37 5.98-.75 8.98-1.1.49-.05 1.04-.18 1.27-.66.57-1 1.02-2.06 1.58-3.1.01.7-.02 1.38.05 2.06.03.6.55 1.1 1.13 1.16.34 0 .68-.04 1.02-.08 2.39-.31 4.79-.58 7.19-.88.42-.06.9-.11 1.23-.42.27-.31.38-.75.34-1.16V7.15c-.01-.94.05-1.9-.05-2.84-.07-.55-.62-.97-1.17-.95-.82 0-1.63.17-2.45.26l-8.1 1zM70.09.62h.52c.58.14 1.1.67 1.1 1.29.02 1.9-.04 3.81 0 5.73 0 .8.05 1.63-.1 2.42-.07.61-.73.86-1.27.94-1.11.17-2.24.26-3.36.42v11.75c-.01 1.06.05 2.13-.05 3.2-.1.62-.76.97-1.35.98-1.78.21-3.56.45-5.35.66-1.14.11-2.28.39-3.44.26-.32-.05-.55-.31-.71-.58-.22-.52-.17-1.1-.2-1.66V12.8c-.95.1-1.9.25-2.86.35-.5 0-1.12.07-1.44-.39-.41-.37-.35-.96-.35-1.45.02-2.27-.01-4.54.01-6.8.03-.4-.04-.9.3-1.2.44-.53 1.17-.49 1.77-.6 5.6-.67 11.2-1.33 16.78-2.07"/></svg></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="highlight">
+      <div class="section-header">
+        <span class="section-tag">Онлайн-практики</span>
+        <h2 class="section-title">Почувствуй настоящую себя</h2>
+        <p class="section-subtitle">свободную от эмоциональных травм, сомнений, стресса и ограничений</p>
+      </div>
+      
+      <ul class="scroller courses-scroller">
+        <li>
+          <a href="/ru/courses/ty-ne-odna/" class="js-actionClick js-link" data-action="content-click" data-action-param="283">
+            <div class="course-card-image">
+              <img class="cover cover_courses" src="/i/courses/283.jpg" alt="Ты не Одна"/>
+              <div class="course-badge">Практика в дар</div>
             </div>
-          </div>
-          <div class="course-footer">
-            <div class="course-meta">
-              <span class="meta-label">Длительность</span>
-              <span class="meta-value">21 минута</span>
+            <h4 class="content-list__header">Ты&nbsp;не&nbsp;Одна</h4>
+            <p class="course-short-desc">Короткая медитативная практика, которая вернет чувство безопасности и&nbsp;доверия жизни</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/courses/claim-your-voice/" class="js-actionClick js-link" data-action="content-click" data-action-param="274">
+            <div class="course-card-image">
+              <img class="cover cover_courses" src="/i/courses/274.jpg" alt="Раскрой Голос Своей Силы"/>
+              <div class="course-badge">Флагманский курс</div>
             </div>
-            <div class="course-meta">
-              <span class="meta-label">Стоимость</span>
-              <span class="meta-value">Бесплатно</span>
+            <h4 class="content-list__header">Раскрой Голос Своей Силы&nbsp;— Ключ к&nbsp;Жизни</h4>
+            <p class="course-short-desc">Самая эффективная программа активации голоса, как важнейшего инструмента управления своей жизнью</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/courses/energiya-ekstaza/" class="js-actionClick js-link" data-action="content-click" data-action-param="250">
+            <div class="course-card-image">
+              <img class="cover cover_courses" src="/i/courses/250.jpg" alt="Энергия Экстаза"/>
+              <div class="course-badge">Вебинар</div>
             </div>
-            <button class="course-cta" aria-label="Подробнее">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-          </div>
-        </div>
+            <h4 class="content-list__header">Энергия Экстаза&nbsp;— Энергия Проявленности</h4>
+            <p class="course-short-desc">Запись одноименного легендарного вебинара Перукуа</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/courses/ty-krasivaya/" class="js-actionClick js-link" data-action="content-click" data-action-param="244">
+            <div class="course-card-image">
+              <img class="cover cover_courses" src="/i/courses/244.jpg" alt="Раскрой Свое Поле Красоты"/>
+              <div class="course-badge">7-дневный курс</div>
+            </div>
+            <h4 class="content-list__header">Раскрой Свое Поле Красоты</h4>
+            <p class="course-short-desc">Твоя магнетическая привлекательность и сияние уже через 7&nbsp;дней</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/courses/menya-dostatochno/" class="js-actionClick js-link" data-action="content-click" data-action-param="230">
+            <div class="course-card-image">
+              <img class="cover cover_courses" src="/i/courses/230.jpg" alt="Меня Достаточно"/>
+              <div class="course-badge">Курс-самооценка</div>
+            </div>
+            <h4 class="content-list__header">Меня Достаточно&nbsp;— Я&nbsp;Проявленная Женщина</h4>
+            <p class="course-short-desc">Как перестать сомневаться в себе, критиковать и вернуть чувство уверенности и самодостаточности</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/courses/mystery/" class="js-actionClick js-link" data-action="content-click" data-action-param="207">
+            <div class="course-card-image">
+              <img class="cover cover_courses" src="/i/courses/207.jpg" alt="Как реализовать свою мечту"/>
+              <div class="course-badge">Практика</div>
+            </div>
+            <h4 class="content-list__header">Как реализовать свою мечту</h4>
+            <p class="course-short-desc">Древние сакральные знания и современные подходы помогут тебе жить жизнью мечты</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/courses/zaschita-ot-negativa/" class="js-actionClick js-link" data-action="content-click" data-action-param="196">
+            <div class="course-card-image">
+              <img class="cover cover_courses" src="/i/courses/196.jpg" alt="Как уберечь себя от негативного влияния"/>
+              <div class="course-badge">Интенсив</div>
+            </div>
+            <h4 class="content-list__header">Как уберечь себя от&nbsp;негативного влияния</h4>
+            <p class="course-short-desc">Инструменты, которые помогут тебе защитить свой внутренний мир от влияния негативной энергии</p>
+          </a>
+        </li>
+      </ul>
+      <div class="section-actions">
+        <a class="button button_action button_main" href="/ru/courses">Раскрой свой потенциал</a>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="about">
+    <section class="highlight">
       <div class="section-header">
-        <span class="section-tag">Мнения</span>
+        <span class="section-tag">Отзывы</span>
         <h2 class="section-title">Меняя жизни. Навсегда.</h2>
+        <p class="section-subtitle">98 из 100 женщин вышли на новый уровень</p>
       </div>
       
-      <div class="quote-slider">
-        <div class="quote-card">
-          <p class="quote-text">«Перукуа великолепная. Её энергетика и голос творят настоящие чудеса. Это глубинное расслабление и наполнение энергией.»</p>
-          <div class="quote-author">
-            <div class="author-info">
-              <h4>Ирина Хакамада</h4>
-              <p>Политик, публицист, общественный деятель</p>
-            </div>
+      <ul class="scroller review-scroller">
+        <li>
+          <div class="review-card">
+            <img class="cover cover_review" src="/i/review/15.jpg" alt="Анфиса Чехова"/>
+            <span class="content-list__review">«Я с сомнением отношусь к расплодившимся коучам, пересказывающим чужие мысли, покупающим себе репутацию. Перукуа другая. От нее исходит мудрость, тихое глубинное счастье. Я знаю, по своему опыту, она меняет жизни женщин навсегда.»</span>
+            <h4 class="content-list__header">Анфиса Чехова</h4>
+            <p class="review-author-title">Телеведущая, актриса</p>
           </div>
-        </div>
-
-        <div class="quote-card">
-          <p class="quote-text">«Женственнее и глубже я никого не встречала. Ее голос словно проникает в самое сердце и пробуждает истинную природу.»</p>
-          <div class="quote-author">
-            <div class="author-info">
-              <h4>Сати Казанова</h4>
-              <p>Певица, исполнительница этнической музыки</p>
-            </div>
+        </li>
+        <li>
+          <div class="review-card">
+            <img class="cover cover_review" src="/i/review/8.jpg" alt="Ирина Хакамада"/>
+            <span class="content-list__review">«Перукуа великолепная. Её энергетика и голос творят чудеса. Это глубинное расслабление и наполнение энергией.»</span>
+            <h4 class="content-list__header">Ирина Хакамада</h4>
+            <p class="review-author-title">Политик и публицист</p>
           </div>
-        </div>
-      </div>
+        </li>
+        <li>
+          <div class="review-card">
+            <img class="cover cover_review" src="/i/review/4.jpg" alt="Сати Казанова"/>
+            <span class="content-list__review">«Женственнее и глубже я никого не встречала. Ее голос словно проникает в самое сердце и пробуждает истинную природу.»</span>
+            <h4 class="content-list__header">Сати Казанова</h4>
+            <p class="review-author-title">Популярная российская исполнительница</p>
+          </div>
+        </li>
+        <li>
+          <div class="review-card">
+            <img class="cover cover_review" src="/i/review/18.jpg" alt="Кира Сорокина"/>
+            <span class="content-list__review">«Красивое яркое путешествие к себе, к своей силе, красоте, изобилию. Перукуа — волшебница! Она так чисто и с любовью передает знания, что они легко раскрывают твою природу.»</span>
+            <h4 class="content-list__header">Кира Сорокина</h4>
+            <p class="review-author-title">Создатель бренда NanoAsia, блоггер</p>
+          </div>
+        </li>
+        <li>
+          <div class="review-card">
+            <img class="cover cover_review" src="/i/review/11.jpg" alt="Ирена Понарошку"/>
+            <span class="content-list__review">«Я получила огромное удовольствие! Одновременно расслабилась и наполнилась свежей энергетикой.»</span>
+            <h4 class="content-list__header">Ирена Понарошку</h4>
+            <p class="review-author-title">Телеведущая, блоггер</p>
+          </div>
+        </li>
+        <li>
+          <div class="review-card">
+            <img class="cover cover_review" src="/i/review/19.jpg" alt="Ксения Сухинова"/>
+            <span class="content-list__review">«Перукуа просто невероятная, глубокая красивая личность и замечательная ведущая практик для женщин.»</span>
+            <h4 class="content-list__header">Ксения Сухинова</h4>
+            <p class="review-author-title">Мисс Россия и Мисс Мира</p>
+          </div>
+        </li>
+        <li>
+          <div class="review-card">
+            <img class="cover cover_review" src="/i/review/7.jpg" alt="Дэва Премал"/>
+            <span class="content-list__review">«Голос Перукуа глубокий и трогательный, сияющий в мир самой сутью женской природы.»</span>
+            <h4 class="content-list__header">Дэва Премал</h4>
+            <p class="review-author-title">Популярная исполнительница мантр</p>
+          </div>
+        </li>
+        <li>
+          <div class="review-card">
+            <img class="cover cover_review" src="/i/review/17.jpg" alt="Наталья Османн"/>
+            <span class="content-list__review">«Это настоящая магия, невероятное волшебство, Энергия чувствуется очень сильно даже онлайн. Несравненные ощущения. Для меня это знакомство с новой собой.»</span>
+            <h4 class="content-list__header">Наталья Османн</h4>
+            <p class="review-author-title">Популярный блоггер, автор проекта #followmeto</p>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- Music Section -->
-    <section id="music">
+    <section class="highlight" id="music">
       <div class="section-header">
         <span class="section-tag">Музыка</span>
-        <h2 class="section-title">Звуки, исцеляющие душу</h2>
+        <h2 class="section-title">Музыка для твоего вдохновения</h2>
       </div>
       
-      <div class="player-container">
-        <div class="player-layout">
-          <div class="album-cover">
-            <!-- Simulated Album Cover -->
+      <ul class="scroller music-scroller">
+        <li>
+          <a href="/ru/audio/muzyka-dlya-rodov/" class="js-actionClick js-link" data-action="content-click" data-action-param="132">
+            <img class="cover cover_audio" src="/i/audio/132.jpg" alt="Музыка для родов"/>
+            <h4 class="content-list__header">Музыка для родов</h4>
+            <p class="music-item-desc">Сборник песен для мягких и гармоничных родов</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/muzyka-zhenskogo-kruga/" class="js-actionClick js-link" data-action="content-click" data-action-param="130">
+            <img class="cover cover_audio" src="/i/audio/130.jpg" alt="Музыка Женского Круга"/>
+            <h4 class="content-list__header">Музыка Женского Круга</h4>
+            <p class="music-item-desc">Бесплатный сборник песен для женских кругов и девичников</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/ya-zhenschina/" class="js-actionClick js-link" data-action="content-click" data-action-param="79">
+            <img class="cover cover_audio" src="/i/audio/79.jpg" alt="Я Женщина"/>
+            <h4 class="content-list__header">Я Женщина</h4>
+            <p class="music-item-desc">Альбом, который лучше всего характеризует ее послание миру</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/ona/" class="js-actionClick js-link" data-action="content-click" data-action-param="65">
+            <img class="cover cover_audio" src="/i/audio/65.jpg" alt="ОНА"/>
+            <h4 class="content-list__header">ОНА</h4>
+            <p class="music-item-desc">Двойной альбом — запись уникального соло-мюзикла «ОНА»</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/istselyayuschie-zhenskie-mantry-ot-perukua/" class="js-actionClick js-link" data-action="content-click" data-action-param="64">
+            <img class="cover cover_audio" src="/i/audio/64.jpg" alt="Исцеляющие Женские Мантры"/>
+            <h4 class="content-list__header">Исцеляющие Женские Мантры</h4>
+            <p class="music-item-desc">Древность встречается с духом нового тысячелетия</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/pervorodniy-istochnik/" class="js-actionClick js-link" data-action="content-click" data-action-param="46">
+            <img class="cover cover_audio" src="/i/audio/46.jpg" alt="Первородный источник"/>
+            <h4 class="content-list__header">Первородный источник</h4>
+            <p class="music-item-desc">Глубокий мистический альбом-притча в 10 песнях</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/praktika-mantr-gayatri-i-om/" class="js-actionClick js-link" data-action="content-click" data-action-param="45">
+            <img class="cover cover_audio" src="/i/audio/45.jpg" alt="Практика мантр Гаятри и ОМ"/>
+            <h4 class="content-list__header">Практика мантр Гаятри и ОМ</h4>
+            <p class="music-item-desc">Освойте две древние мантры в их исконном звучании</p>
+          </a>
+        </li>
+      </ul>
+      <div class="section-actions">
+        <a class="button button_action button_main" href="/ru/audio">Послушай сейчас</a>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="highlight" id="events">
+      <div class="section-header">
+        <span class="section-tag">События</span>
+        <h2 class="section-title">Встреться со мной лично</h2>
+        <p class="section-subtitle">Участвуй в моих ближайших мероприятиях</p>
+      </div>
+      
+      <div class="events-container">
+        <img src="/i/features/events/header-1.jpg" alt="Ближайшие события" class="events-main-img"/>
+        <ul class="event-list">
+          <li>
+            <a href="/ru/sila/" class="js-actionClick event-list__item" data-action="content-click" data-action-param="301" data-content-type="events" data-content-uri="sila">
+              <div class="event-date-badge">20.06 – 11.07</div>
+              <div class="event-details">
+                <span class="event-location">Онлайн, у меня на сайте</span>
+                <h4 class="content-list__header event-list__header">21 день, 21 минута ежедневно — Новые Опоры Твоей Жизни</h4>
+                <span class="event-list__description">Выходим из тревоги, жалости и негатива во внутреннюю силу, ясность и масштаб</span>
+              </div>
+              <div class="event-arrow">→</div>
+            </a>
+          </li>
+          <li>
+            <a href="/ru/kremlin/" class="js-actionClick event-list__item" data-action="content-click" data-action-param="275" data-content-type="events" data-content-uri="kremlin">
+              <div class="event-date-badge">23.09</div>
+              <div class="event-details">
+                <span class="event-location">Москва, Кремлевский Дворец</span>
+                <h4 class="content-list__header event-list__header">Встреча с Собой — концерт с оркестром</h4>
+                <span class="event-list__description">Премьера новой концертной программы с роскошным музыкальным сопровождением</span>
+              </div>
+              <div class="event-arrow">→</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-actions">
+        <a class="button button_action button_main" href="/ru/events">Посмотреть все события</a>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="highlight">
+      <div class="section-header">
+        <span class="section-tag">Видеоклип</span>
+        <h2 class="section-title">Насладись визуальной красотой</h2>
+        <p class="section-subtitle">Посмотри мое последнее видео</p>
+      </div>
+      
+      <div class="video-promo-container">
+        <a href="/ru/video/let-the-shakti-in/" class="js-actionClick video-promo-link" data-action="content-click" data-action-param="59;1" data-content-type="video" data-content-uri="let-the-shakti-in">
+          <div class="featured-video__image">
+            <img src="/i/video/featured/59.jpg" alt="Let the Shakti in"/>
+            <div class="video-play-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"/></svg>
+            </div>
           </div>
-          <div class="track-list">
-            <div class="track-item active">
-              <span class="track-title">01. Я Женщина (I Am Woman)</span>
-              <span class="track-duration">4:32</span>
-            </div>
-            <div class="track-item">
-              <span class="track-title">02. Исцеляющие мантры Гаятри</span>
-              <span class="track-duration">7:15</span>
-            </div>
-            <div class="track-item">
-              <span class="track-title">03. Первородный источник</span>
-              <span class="track-duration">5:08</span>
-            </div>
-            <div class="track-item">
-              <span class="track-title">04. Музыка Женского Круга</span>
-              <span class="track-duration">6:40</span>
-            </div>
-          </div>
-        </div>
+          <h4 class="content-list__header featured-video__header">Let the Shakti in</h4>
+          <span class="featured-video__text">Мое самое чувственное музыкальное видео</span>
+        </a>
+      </div>
+      <div class="section-actions" style="margin-top: 3rem;">
+        <a class="button button_action button_main" href="/ru/video/">Посмотреть мои видео</a>
       </div>
     </section>
   </main>
 
-  <!-- Performance Stats Toggle Button -->
-  <button class="stats-toggle" id="toggleStats">Тех. показатели страницы</button>
-
-  <!-- Tech Stats Overlay -->
-  <div class="tech-stats" id="statsDrawer">
-    <div class="stats-container">
-      <div class="stats-info">
-        <div class="stat-item">
-          <span class="stat-label">Размер HTML/CSS</span>
-          <span class="stat-value">&lt; 15 КБ (compressed)</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">Скорость загрузки (TTFB)</span>
-          <span class="stat-value">&lt; 120 мс</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">Запросы к прокси (Германия)</span>
-          <span class="stat-value">0 (Оптимизировано для РФ)</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">Шрифты (Google Fonts)</span>
-          <span class="stat-value">Cormorant & Montserrat</span>
-        </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <h2 class="footer-logo">PERUQUOIS<span>.</span></h2>
+        <p class="footer-cop">&copy; 2026 Перукуа. Все права защищены.</p>
       </div>
-      <button class="nav-cta" id="closeStats">Закрыть</button>
+      <ul class="footer__nav">
+        <li><a href="/ru/support">Поддержка</a></li>
+        <li><a href="/ru/partners/">Партнеры</a></li>
+        <li><a href="/ru/personal/" target="_blank">Согласие на обработку персональных данных</a></li>
+        <li><a href="/ru/agreement/" target="_blank">Оферта Договора оказания услуг</a></li>
+        <li><a href="mailto:support@peruquois.com">Связаться с нами</a></li>
+      </ul>
+      <nav class="footer__language">
+        <input type="checkbox" id="languageToggle"/>
+        <label for="languageToggle" class="js-actionClick" data-action="language-open">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="currentColor"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z"/></svg>
+          <span>Русский</span>
+        </label>
+        <ul class="language-menu">
+          <li><a href="/" class="js-actionClick" data-action="language-change" data-action-param="1">English</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </footer>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MN52RWRY2"></script>
   <script>
-    const toggleBtn = document.getElementById('toggleStats');
-    const closeBtn = document.getElementById('closeStats');
-    const drawer = document.getElementById('statsDrawer');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2MN52RWRY2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194990079-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-194990079-1');
+  </script>
+  <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?169",t.onload=function(){VK.Retargeting.Init("VK-RTRG-921713-gdzoy"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script>
+  <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-921713-gdzoy" style="position:fixed; left:-999px;" alt=""/></noscript>
+  
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3375775", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src = "https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3375775;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3691830", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src = "https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3691830;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
 
-    toggleBtn.addEventListener('click', () => {
-      drawer.classList.add('visible');
-      toggleBtn.style.display = 'none';
-    });
-
-    closeBtn.addEventListener('click', () => {
-      drawer.classList.remove('visible');
-      toggleBtn.style.display = 'block';
+  <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript" > 
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(36485560, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"dataLayer" }); 
+  </script> 
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(43960959, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
     });
   </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/43960959" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>

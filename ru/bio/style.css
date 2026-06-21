@@ -1,5 +1,5 @@
 /* Kinfolk-inspired Magazine Style biography stylesheet */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Tenor+Sans&display=swap');
 
 :root {
   --color-bg: #f5f3f0;
@@ -8,8 +8,8 @@
   --color-accent: #a3825e;
   --color-border: rgba(29, 28, 26, 0.08);
   
-  --font-headings: 'Cormorant Garamond', serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-headings: 'Forum', serif;
+  --font-body: 'Tenor Sans', sans-serif;
   
   --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }

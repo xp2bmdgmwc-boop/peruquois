@@ -38,8 +38,8 @@ The modernized layout will adopt a premium, clean "magazine-style minimalism" ae
 ### Key Visual & Layout Fixes:
 *   **Hero Section:** Replace the cold, dark video player box at the top with a full-bleed, high-quality, atmospheric photo of Peruquois. Add a soft background glow representing "energy movement." Put the video behind a styled "Play Video" overlay button.
 *   **Typography Pairing:**
-    *   *Headings:* Replace the blocky, industrial **Oswald** with **Cormorant Garamond** (an elegant, flowing, feminine serif font).
-    *   *Body text:* Replace the mechanical **Roboto** with **Montserrat** or **Satoshi** (clean, readable geometric sans-serif).
+    *   *Headings:* Replace the blocky, industrial **Oswald** with **Forum** (an elegant, ancient Roman proportioned serif font with beautiful Cyrillic support).
+    *   *Body text:* Replace the mechanical **Roboto** with **Tenor Sans** (a clean, luxury-fashion humanist sans-serif).
 *   **Alignment:** Change body paragraphs from center-alignment to left-alignment to eliminate jagged left edges and visual fatigue. Break paragraphs into short 3-4 line blocks.
 *   **Spacing (Fitts's Law):** Add generous margins and paddings (e.g., `py-24` or `40-60px` margins around CTAs) to let elements breathe.
 *   **Social Proof:** Align celebrity reviews (Irina Khakamada, Anfisa Chekhova) in structured layouts. Use a warm, contrasting background container (light sand, champagne, or off-white) to set them apart.

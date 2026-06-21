@@ -1,266 +1,444 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-language-id="2">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Встреча с Собой — концерт Перукуа с оркестром в Кремлевском Дворце. Выберите лучшие места.">
-  <title>Перукуа — Встреча с Собой (Концерт в Кремле)</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8"/>
+  <title>Встреча с Собой — концерт Перукуа с оркестром в Кремлевском Дворце</title>
+  <meta name="facebook-domain-verification" content="kdbkjkzxedlanq5jg2w0dafw5hteee" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/site-ru.webmanifest?v=1">
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+  <meta name="apple-mobile-web-app-title" content="Peruquois">
+  <meta name="application-name" content="Peruquois">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="/css/plyr.css?rnd=50"/>
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  
+  <script src="/js/core.js"></script>
+  <script src="/js/stats.js"></script>
 </head>
 <body>
 
-  <!-- Background decorative element -->
-  <svg class="mystic-sigil" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
-    <circle cx="50" cy="50" r="45" stroke-dasharray="2, 2" />
-    <circle cx="50" cy="50" r="35" />
-    <polygon points="50,15 80,65 20,65" />
-    <polygon points="50,85 80,35 20,35" />
-  </svg>
+  <!-- Dynamic Energy Blobs (GPU Accelerated CSS Blur) -->
+  <div class="energy-bg">
+    <div class="energy-blob blob-1"></div>
+    <div class="energy-blob blob-2"></div>
+    <div class="energy-blob blob-3"></div>
+  </div>
 
-  <!-- Navigation -->
-  <header>
-    <div class="nav-container">
-      <a href="/" class="logo">PERUQUOIS<span>.</span></a>
-      <a href="/" class="back-link">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Назад на главную
+  <!-- Transparent Floating Header Navigation -->
+  <nav class="nav-main showAnimation">
+    <label for="menuToggle" class="nav-main__toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18"><g fill="#ffffff"><rect width="26" height="4" rx="1"/><rect width="26" height="4" y="7" rx="1"/><rect width="26" height="4" y="14" rx="1"/></g></svg>
+    </label>
+    <input type="checkbox" id="menuToggle"/>
+    <a href="/ru/" class="js-link nav-main__logo">Перукуа</a>
+    <ul class="nav-main__items">
+      <li><a href="/ru/bio/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="7">Био</a></li>
+      <li><a href="/ru/audio/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="1">Музыка</a></li>
+      <li><a href="/ru/video/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="2">Видео</a></li>
+      <li><a href="/ru/courses/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="8">Онлайн-курсы</a></li>
+      <li><a href="/ru/events/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="10">События</a></li>
+      <li><a href="/ru/contacts/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="40">Контакты</a></li>
+    </ul>
+    <div class="nav-right">
+      <a title="Мои заказы" href="/ru/user/" class="js-link nav-main__account">Мои заказы</a>
+      <a title="" href="/ru/cart/" class="js-link nav-main__cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"/></svg>
+        <sup id="js-cartCounter" style="display: none;">0</sup>
       </a>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <span class="hero-meta">23.09 · Москва · Кремлевский Дворец</span>
-    <h1 class="hero-title">Встреча с Собой</h1>
-    <p class="hero-subtitle">Премьера новой концертной программы с роскошным оркестровым сопровождением</p>
-    <a href="https://kremlinpalace.org/buy-tks/604340" target="_blank" class="hero-cta">ВЫБРАТЬ МОЕ МЕСТО</a>
-  </section>
+  <section class="landing">
+    <!-- Header Hero -->
+    <header class="landing__header">
+      <span class="concert-meta">23.09, Москва, Кремлевский Дворец</span>
+      <h1>Встреча с&nbsp;Собой&nbsp;&mdash; концерт с&nbsp;оркестром</h1>
+      <h4>Премьера новой концертной программы с&nbsp;роскошным музыкальным сопровождением</h4>
+    </header>
 
-  <!-- Presentation Video -->
-  <section class="promo-video-section">
-    <div class="video-container" id="promoVideo">
-      <div class="video-backdrop" style="background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1200&auto=format&fit=crop');"></div>
-      <div class="video-overlay">
-        <div class="play-button">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    <article class="js-toolbar-start landing__content">
+      
+      <!-- Video 1 -->
+      <div class="video-wrapper">
+        <script src="/js/plyr.js?rnd=40" defer></script>
+        <script src="/js/player.js?rnd=40" defer></script>
+        <div class="videoContainer" id="js-media">
+          <video controls controlsList="nodownload" crossorigin playsinline class="videoPlayer" data-content-type="" data-content-id="">
+            <source src="/v/kremlin.mp4" type="video/mp4" size="1080" />
+          </video>
         </div>
-        <span class="play-label">Смотреть трейлер концерта</span>
+      </div>
+
+      <!-- Ticket Link & Subtitle -->
+      <div class="cta-block">
+        <a href="https://kremlinpalace.org/buy-tks/604340" target="_blank" class="button button_action button_main">ВЫБРАТЬ МОЕ МЕСТО</a>
+        <h4>Нажмите на&nbsp;кнопку, чтобы выбрать место в&nbsp;зале (от&nbsp;1900 рублей) на&nbsp;сайте Кремлевского Дворца .</h4>
+      </div>
+
+      <!-- Intro text -->
+      <div class="intro-description">
+        <p><b>Представь, как в&nbsp;защищенном безопасном пространстве</b> ты&nbsp;можешь отпустить все отжившее, освободиться от&nbsp;старых поведенческих программ, снять с&nbsp;себя маски навязанных правил и&nbsp;вспомнить: как это&nbsp;&mdash; просто Быть Собой.</p>
+        <p><b>Окутанной любящим заботливым голосом</b> в&nbsp;аккомпанементе большого симфонического оркестра, наполниться этим сочным искрящимся чувством: &laquo;Да,&nbsp;я&nbsp;жива, и&nbsp;люблю свою жизнь&raquo;.</p>
+        <p><b>Встреча с&nbsp;Собой&nbsp;&mdash; это не&nbsp;просто новая музыкальная программа</b>, а&nbsp;возможность прожить самое ценное переживание полного принятия себя и&nbsp;растворения в&nbsp;нежном чувстве любви, заботы и&nbsp;поддержки.</p>
+      </div>
+
+      <!-- Review Section -->
+      <div class="concert-section">
+        <h3>Отзывы участниц концерта</h3>
+        <div class="video-wrapper">
+          <div class="videoContainer" id="js-media">
+            <video controls controlsList="nodownload" crossorigin playsinline class="videoPlayer" data-content-type="" data-content-id="">
+              <source src="/v/kremlin-reviews.mp4" type="video/mp4" size="1080" />
+            </video>
+          </div>
+        </div>
+        <p class="video-subtext">Вдохновляйся и&nbsp;одевайся нарядно на&nbsp;это замечательное свидание с&nbsp;самым важным человеком в&nbsp;вашей жизни&nbsp;&mdash; настоящей собой.</p>
+      </div>
+
+      <!-- Program Details -->
+      <div class="program-intro">
+        <h4>Встреча с&nbsp;Собой&nbsp;&mdash; концертная программа с&nbsp;оркестром в&nbsp;2-х частях с&nbsp;антрактом. Будут как новинки, так и&nbsp;яркие обработки ваших любимых песен. Это настоящий праздник души, который оставит долгое послевкусие, как будто вы&nbsp;испили божественный нектар.</h4>
+      </div>
+
+      <!-- Program Flow (3 Parts) -->
+      <div class="program-flow-grid">
+        <div class="program-part">
+          <span class="part-number">Часть I</span>
+          <h3>Открытие</h3>
+          <p>Голос Перукуа в&nbsp;сопровождении симфонического оркестра открывает пространство, в&nbsp;котором можно отпустить все лишнее, снять маски и&nbsp;позволить себе просто наслаждаться собой, вечером и&nbsp;красивыми состояниями.</p>
+        </div>
+        <div class="program-part">
+          <span class="part-number">Антракт</span>
+          <h3>Встреча</h3>
+          <p>Отличное время, чтобы осмыслить пережитое, попить чаю, почувствовать новые ощущения или наоборот познакомиться с&nbsp;интересными близкими по&nbsp;состоянию людьми, обменяться впечатлениями и&nbsp;эмоциями.</p>
+        </div>
+        <div class="program-part">
+          <span class="part-number">Часть II</span>
+          <h3>Расширение</h3>
+          <p>Новые песни и&nbsp;любимые хиты в&nbsp;ярких оркестровых обработках. Кульминация вечера&nbsp;&mdash; единение в&nbsp;общем поле звука и&nbsp;голоса! Самое время использовать эту обильную энергетику зала для своего наполнения и&nbsp;перезарядки.</p>
+        </div>
+      </div>
+
+      <div class="cta-block">
+        <a href="https://kremlinpalace.org/buy-tks/604340" target="_blank" class="button button_action button_main">ВЫБРАТЬ МОЕ МЕСТО</a>
+      </div>
+
+      <!-- Stars Testimonials Scroller -->
+      <div class="stars-block">
+        <h2>Звезды о&nbsp;Перукуа</h2>
+        <ul class="contentScroller stars-scroller">
+          <li>
+            <img src="/i/events/275/741019B2122AD314.jpg" alt="Ирина Хакамада">
+            <div class="star-quote">
+              <p>Перукуа великолепная. Её&nbsp;энергетика и&nbsp;голос творят чудеса.</p>
+              <h4>ИРИНА ХАКАМАДА</h4>
+              <span>Политик и&nbsp;публицист</span>
+            </div>
+          </li>
+          <li>
+            <img src="/i/events/275/C3CED6128F66F9F7.jpg" alt="Сати Казанова">
+            <div class="star-quote">
+              <p>Перукуа совершенно невероятная! Этот проект поражает своей глубиной и&nbsp;тем, как легко ей&nbsp;удается создать очень красивое единое поле вместе со&nbsp;всей аудиторией</p>
+              <h4>САТИ КАЗАНОВА</h4>
+              <span>Популярная певица</span>
+            </div>
+          </li>
+          <li>
+            <img src="/i/events/275/D3B957C1DD629D57.jpg" alt="Том Васингер">
+            <div class="star-quote">
+              <p>За&nbsp;свои 35&nbsp;лет в&nbsp;музыке я&nbsp;никогда не&nbsp;работал с&nbsp;исполнителем, равным Перукуа</p>
+              <h4>ТОМ ВАСИНГЕР</h4>
+              <span>3-х кратный обладатель премии Грэмии</span>
+            </div>
+          </li>
+          <li>
+            <img src="/i/events/275/B553C8ECBAADB5B6.jpg" alt="Дэва Премал">
+            <div class="star-quote">
+              <p>Голос Перукуа глубокий и&nbsp;трогательный, сияющий в&nbsp;мир самой сутью женской природы.</p>
+              <h4>ДЭВА&nbsp;ПРЕМАЛ</h4>
+              <span>Популярная исполнительница мантр</span>
+            </div>
+          </li>
+          <li>
+            <img src="/i/events/275/079FBAEDD31450C3.jpg" alt="Снатам Каур">
+            <div class="star-quote">
+              <p>Волшебный голос, останавливающий время. Он&nbsp;настраивает на&nbsp;самые высшие состояния.</p>
+              <h4>СНАТАМ КАУР</h4>
+              <span>Популярная исполнительница мантр</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Facts block -->
+      <div class="facts-block">
+        <h3>Немного фактов, что ты&nbsp;получишь помимо удовольствия:</h3>
+        <ul class="facts-list">
+          <li>
+            <strong>Диапазон голоса Перукуа 4&nbsp;октавы, а&nbsp;с&nbsp;мульти-обертонами&nbsp;&mdash; невероятные 8&nbsp;октав!</strong>
+            <span>Тебя окутает невероятная по&nbsp;красоте и&nbsp;мощи вибрационная волна&nbsp;&mdash; нижняя частота голоса Перукуа 50Гц, верхняя 11.812Гц (это практически верх слухового диапазона)</span>
+          </li>
+          <li>
+            <strong>Нахождение в&nbsp;поле живого голоса Перукуа повышает адаптивные сили организма от&nbsp;2&nbsp;до&nbsp;14&nbsp;раз!</strong>
+            <span>(подтверждено многочисленными тестами)</span>
+          </li>
+          <li>
+            <strong>Голос Перукуа обладает способностью проникать в&nbsp;подсознание и&nbsp;убирать ограничивающие установки</strong>
+            <span>(проверено тестами и&nbsp;психологами)</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-wrapper">
+        <div class="videoContainer" id="js-media">
+          <video controls controlsList="nodownload" crossorigin playsinline class="videoPlayer" data-content-type="" data-content-id="">
+            <source src="/v/believe.mp4" type="video/mp4" size="1080" />
+          </video>
+        </div>
+      </div>
+
+      <!-- FAQ Section (Formatted nicely) -->
+      <div class="faq-block">
+        <h2>Что ожидать?</h2>
+        
+        <div class="faq-item">
+          <div class="faq-question">Подойдет&nbsp;ли мне этот концерт, если я&nbsp;никогда раньше не&nbsp;была на&nbsp;выступлениях Перукуа?</div>
+          <div class="faq-answer">
+            <p>Да,&nbsp;конечно, концерт Встреча с&nbsp;Собой это мягкое красивое погружение в&nbsp;целую палитру ярких переживаний. Никакой специальной подготовки не&nbsp;требуется.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">Стоит&nbsp;ли мне идти на&nbsp;это выступление, если я&nbsp;уже была на&nbsp;концертах Перукуа?</div>
+          <div class="faq-answer">
+            <p>Разумеется, это новая программа&nbsp;&mdash; новые переживания, новые эмоции, новые инсайты! Прекрасный вечер чтобы освежиться, наполниться и&nbsp;побыть в&nbsp;кругу других замечательных близких по&nbsp;духу людей.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Можно&nbsp;ли мужчинам?</div>
+          <div class="faq-answer">
+            <p>Нужно! Где еще мужчины могут попасть в&nbsp;такое яркое красивое женское пространство? Берите своего мужчину, после этого вечера его уровень уважения и&nbsp;восхищения вами только повысится. А&nbsp;если вы&nbsp;мужчина&nbsp;&mdash; вас помимо роскошной концертной программы ждет много удивительных встреч с&nbsp;фойе Кремлевского Дворца.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Стоит&nbsp;ли мне одеться как-то по&nbsp;особенному?</div>
+          <div class="faq-answer">
+            <p>Это необязательно, но&nbsp;приятно осознавать, что красота спасает мир! Одевайте красивые платья, элегантные наряды, давайте наполним столицу этим состоянием. Помню в&nbsp;прошлый раз все офицеры ФСО просили нас почаще проводить мероприятия в&nbsp;Кремлевском Дворце ведь такой красоты они раньше не&nbsp;видели никогда, давайте порадуем и&nbsp;тех, кто будет оберегать наш вечер.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Можно&nbsp;ли взять на&nbsp;этот концерт маму?</div>
+          <div class="faq-answer">
+            <p>Да,&nbsp;конечно, это будет ей&nbsp;лучшим подарком. Никогда не&nbsp;поздно пережить встречу с&nbsp;собой. И&nbsp;эта встреча лишь укрепит и&nbsp;наполнит любовью ваш заложенный самой жизнью союз.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo Scroller Gallery (40 Images) -->
+      <div class="gallery-block">
+        <h3>Галерея</h3>
+        <ul class="contentScroller">
+          <li><img src="/i/events/275/34EB1C525C5AA129-3.jpg" srcset="/i/events/275/34EB1C525C5AA129-3.jpg 400w, /i/events/275/34EB1C525C5AA129-4.jpg 600w" alt="Перукуа концерт 1"></li>
+          <li><img src="/i/events/275/E8C78E57A8A1A3EE-3.jpg" srcset="/i/events/275/E8C78E57A8A1A3EE-3.jpg 400w, /i/events/275/E8C78E57A8A1A3EE-4.jpg 600w" alt="Перукуа концерт 2"></li>
+          <li><img src="/i/events/275/498518CEF0745D27-3.jpg" srcset="/i/events/275/498518CEF0745D27-3.jpg 400w, /i/events/275/498518CEF0745D27-4.jpg 600w" alt="Перукуа концерт 3"></li>
+          <li><img src="/i/events/275/65DBFD7D42CA003B-3.jpg" srcset="/i/events/275/65DBFD7D42CA003B-3.jpg 400w, /i/events/275/65DBFD7D42CA003B-4.jpg 600w" alt="Перукуа концерт 4"></li>
+          <li><img src="/i/events/275/90FD6D88A31F930C-3.jpg" srcset="/i/events/275/90FD6D88A31F930C-3.jpg 400w, /i/events/275/90FD6D88A31F930C-4.jpg 600w" alt="Перукуа концерт 5"></li>
+          <li><img src="/i/events/275/9A932EB18C17247E-3.jpg" srcset="/i/events/275/9A932EB18C17247E-3.jpg 400w, /i/events/275/9A932EB18C17247E-4.jpg 600w" alt="Перукуа концерт 6"></li>
+          <li><img src="/i/events/275/AB91FC8C2B9CC644-3.jpg" srcset="/i/events/275/AB91FC8C2B9CC644-3.jpg 400w, /i/events/275/AB91FC8C2B9CC644-4.jpg 600w" alt="Перукуа концерт 7"></li>
+          <li><img src="/i/events/275/F1B31060C85B7378-3.jpg" srcset="/i/events/275/F1B31060C85B7378-3.jpg 400w, /i/events/275/F1B31060C85B7378-4.jpg 600w" alt="Перукуа концерт 8"></li>
+          <li><img src="/i/events/275/30F197AA6043C578-3.jpg" srcset="/i/events/275/30F197AA6043C578-3.jpg 400w, /i/events/275/30F197AA6043C578-4.jpg 600w" alt="Перукуа концерт 9"></li>
+          <li><img src="/i/events/275/190F70EB79FBB5DF-3.jpg" srcset="/i/events/275/190F70EB79FBB5DF-3.jpg 400w, /i/events/275/190F70EB79FBB5DF-4.jpg 600w" alt="Перукуа концерт 10"></li>
+          <li><img src="/i/events/275/0806B981B4CAE601-3.jpg" srcset="/i/events/275/0806B981B4CAE601-3.jpg 400w, /i/events/275/0806B981B4CAE601-4.jpg 600w" alt="Перукуа концерт 11"></li>
+          <li><img src="/i/events/275/33B0A1BF424FABFD-3.jpg" srcset="/i/events/275/33B0A1BF424FABFD-3.jpg 400w, /i/events/275/33B0A1BF424FABFD-4.jpg 600w" alt="Перукуа концерт 12"></li>
+          <li><img src="/i/events/275/E0FD2271EB6217CE-3.jpg" srcset="/i/events/275/E0FD2271EB6217CE-3.jpg 400w, /i/events/275/E0FD2271EB6217CE-4.jpg 600w" alt="Перукуа концерт 13"></li>
+          <li><img src="/i/events/275/A791CCE6BA24D6A2-3.jpg" srcset="/i/events/275/A791CCE6BA24D6A2-3.jpg 400w, /i/events/275/A791CCE6BA24D6A2-4.jpg 600w" alt="Перукуа концерт 14"></li>
+          <li><img src="/i/events/275/95D7976A4254376A-3.jpg" srcset="/i/events/275/95D7976A4254376A-3.jpg 400w, /i/events/275/95D7976A4254376A-4.jpg 600w" alt="Перукуа концерт 15"></li>
+          <li><img src="/i/events/275/64D67E21C0E548A4-3.jpg" srcset="/i/events/275/64D67E21C0E548A4-3.jpg 400w, /i/events/275/64D67E21C0E548A4-4.jpg 600w" alt="Перукуа концерт 16"></li>
+          <li><img src="/i/events/275/1A831C4D8CE15EE6-3.jpg" srcset="/i/events/275/1A831C4D8CE15EE6-3.jpg 400w, /i/events/275/1A831C4D8CE15EE6-4.jpg 600w" alt="Перукуа концерт 17"></li>
+          <li><img src="/i/events/275/64F937AB8D3DB8A2-3.jpg" srcset="/i/events/275/64F937AB8D3DB8A2-3.jpg 400w, /i/events/275/64F937AB8D3DB8A2-4.jpg 600w" alt="Перукуа концерт 18"></li>
+          <li><img src="/i/events/275/9A097D2F0C17E83E-3.jpg" srcset="/i/events/275/9A097D2F0C17E83E-3.jpg 400w, /i/events/275/9A097D2F0C17E83E-4.jpg 600w" alt="Перукуа концерт 19"></li>
+          <li><img src="/i/events/275/15B8561F44367E80-3.jpg" srcset="/i/events/275/15B8561F44367E80-3.jpg 400w, /i/events/275/15B8561F44367E80-4.jpg 600w" alt="Перукуа концерт 20"></li>
+          <li><img src="/i/events/275/09F21226C6AC065A-3.jpg" srcset="/i/events/275/09F21226C6AC065A-3.jpg 400w, /i/events/275/09F21226C6AC065A-4.jpg 600w" alt="Перукуа концерт 21"></li>
+          <li><img src="/i/events/275/A68218BBF8F26B3C-3.jpg" srcset="/i/events/275/A68218BBF8F26B3C-3.jpg 400w, /i/events/275/A68218BBF8F26B3C-4.jpg 600w" alt="Перукуа концерт 22"></li>
+          <li><img src="/i/events/275/377788C50854729E-3.jpg" srcset="/i/events/275/377788C50854729E-3.jpg 400w, /i/events/275/377788C50854729E-4.jpg 600w" alt="Перукуа концерт 23"></li>
+          <li><img src="/i/events/275/87BD0B3753953914-3.jpg" srcset="/i/events/275/87BD0B3753953914-3.jpg 400w, /i/events/275/87BD0B3753953914-4.jpg 600w" alt="Перукуа концерт 24"></li>
+          <li><img src="/i/events/275/9A00664691E76789-3.jpg" srcset="/i/events/275/9A00664691E76789-3.jpg 400w, /i/events/275/9A00664691E76789-4.jpg 600w" alt="Перукуа концерт 25"></li>
+          <li><img src="/i/events/275/CC386293E72F4E5B-3.jpg" srcset="/i/events/275/CC386293E72F4E5B-3.jpg 400w, /i/events/275/CC386293E72F4E5B-4.jpg 600w" alt="Перукуа концерт 26"></li>
+          <li><img src="/i/events/275/57C01126BB15D7AD-3.jpg" srcset="/i/events/275/57C01126BB15D7AD-3.jpg 400w, /i/events/275/57C01126BB15D7AD-4.jpg 600w" alt="Перукуа концерт 27"></li>
+          <li><img src="/i/events/275/306DC05C3831575C-3.jpg" srcset="/i/events/275/306DC05C3831575C-3.jpg 400w, /i/events/275/306DC05C3831575C-4.jpg 600w" alt="Перукуа концерт 28"></li>
+          <li><img src="/i/events/275/897514CA298166B5-3.jpg" srcset="/i/events/275/897514CA298166B5-3.jpg 400w, /i/events/275/897514CA298166B5-4.jpg 600w" alt="Перукуа концерт 29"></li>
+          <li><img src="/i/events/275/C4771D793DB8F2F1-3.jpg" srcset="/i/events/275/C4771D793DB8F2F1-3.jpg 400w, /i/events/275/C4771D793DB8F2F1-4.jpg 600w" alt="Перукуа концерт 30"></li>
+          <li><img src="/i/events/275/F6C3F557772D3BDE-3.jpg" srcset="/i/events/275/F6C3F557772D3BDE-3.jpg 400w, /i/events/275/F6C3F557772D3BDE-4.jpg 600w" alt="Перукуа концерт 31"></li>
+          <li><img src="/i/events/275/89D9D3063D742BD0-3.jpg" srcset="/i/events/275/89D9D3063D742BD0-3.jpg 400w, /i/events/275/89D9D3063D742BD0-4.jpg 600w" alt="Перукуа концерт 32"></li>
+          <li><img src="/i/events/275/7C6AC7CBAB366B8D-3.jpg" srcset="/i/events/275/7C6AC7CBAB366B8D-3.jpg 400w, /i/events/275/7C6AC7CBAB366B8D-4.jpg 600w" alt="Перукуа концерт 33"></li>
+          <li><img src="/i/events/275/EC4615F6C78F3410-3.jpg" srcset="/i/events/275/EC4615F6C78F3410-3.jpg 400w, /i/events/275/EC4615F6C78F3410-4.jpg 600w" alt="Перукуа концерт 34"></li>
+          <li><img src="/i/events/275/D6017CF5A5F3A243-3.jpg" srcset="/i/events/275/D6017CF5A5F3A243-3.jpg 400w, /i/events/275/D6017CF5A5F3A243-4.jpg 600w" alt="Перукуа концерт 35"></li>
+          <li><img src="/i/events/275/C757EBA4034896C8-3.jpg" srcset="/i/events/275/C757EBA4034896C8-3.jpg 400w, /i/events/275/C757EBA4034896C8-4.jpg 600w" alt="Перукуа концерт 36"></li>
+          <li><img src="/i/events/275/B9E772B5B094102D-3.jpg" srcset="/i/events/275/B9E772B5B094102D-3.jpg 400w, /i/events/275/B9E772B5B094102D-4.jpg 600w" alt="Перукуа концерт 37"></li>
+          <li><img src="/i/events/275/447F8AD7E3599163-3.jpg" srcset="/i/events/275/447F8AD7E3599163-3.jpg 400w, /i/events/275/447F8AD7E3599163-4.jpg 600w" alt="Перукуа концерт 38"></li>
+          <li><img src="/i/events/275/0ABA53645E72E9C6-3.jpg" srcset="/i/events/275/0ABA53645E72E9C6-3.jpg 400w, /i/events/275/0ABA53645E72E9C6-4.jpg 600w" alt="Перукуа концерт 39"></li>
+          <li><img src="/i/events/275/9CB0BFEDE74BDC41-3.jpg" srcset="/i/events/275/9CB0BFEDE74BDC41-3.jpg 400w, /i/events/275/9CB0BFEDE74BDC41-4.jpg 600w" alt="Перукуа концерт 40"></li>
+        </ul>
+      </div>
+
+      <!-- Ticket Link Footer -->
+      <div class="cta-block">
+        <a href="https://kremlinpalace.org/buy-tks/604340" target="_blank" class="button button_action button_main">ВЫБРАТЬ МОЕ МЕСТО</a>
+      </div>
+
+      <!-- Support block -->
+      <div class="support-block">
+        <h2 class="content-support">Задай свой вопрос Перукуа</h2>
+        <p>Если у тебя возникли какие-либо вопросы по этому продукту, пожалуйста, напиши мне в мессенджер. Я отвечу в самое ближайшее время.</p>
+        <ul class="support-options">
+          <li>
+            <a href="https://t.me/Peruquoissupport" class="support-option support-option_telegram" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="currentColor"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+              <span>Написать в Telegram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/+79384025050" class="support-option support-option_whatsapp" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+              <span>Написать в Whatsapp</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </article>
+
+    <!-- Overlay Price Modal placeholder to preserve function -->
+    <div id="price" class="overlay overlay_hidden">
+      <a href="#" class="overlay__cancel js-actionClick" data-action="content-price-close" ></a>
+      <div class="overlay__data">
+        <a id="closeButton" class="close js-actionClick" href="#" data-action="content-price-close" >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"><path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <main>
-    <!-- Intro text blocks -->
-    <section class="intro-text-section">
-      <div class="intro-grid">
-        <div class="intro-block">
-          <p><strong>Представь, как в защищенном безопасном пространстве</strong> ты можешь отпустить все отжившее, освободиться от старых поведенческих программ, снять с себя маски навязанных правил и вспомнить: как это — просто Быть Собой.</p>
-        </div>
-        <div class="intro-block">
-          <p><strong>Окутанной любящим заботливым голосом</strong> в аккомпанементе большого симфонического оркестра, наполниться этим сочным искрящимся чувством: «Да, я жива, и люблю свою жизнь».</p>
-        </div>
-        <div class="intro-block">
-          <p><strong>Встреча с Собой — это не просто концерт</strong>, а возможность прожить самое ценное переживание полного принятия себя и растворения в нежном чувстве любви, заботы и поддержки.</p>
-        </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <h2 class="footer-logo">PERUQUOIS</h2>
+        <p class="footer-cop">&copy; 2026 Перукуа. Все права защищены.</p>
       </div>
-    </section>
+      <ul class="footer__nav">
+        <li><a href="/ru/support">Поддержка</a></li>
+        <li><a href="/ru/partners/">Партнеры</a></li>
+        <li><a href="/ru/personal/" target="_blank">Согласие на обработку персональных данных</a></li>
+        <li><a href="/ru/agreement/" target="_blank">Оферта Договора оказания услуг</a></li>
+        <li><a href="mailto:support@peruquois.com">Связаться с нами</a></li>
+      </ul>
+      <nav class="footer__language">
+        <input type="checkbox" id="languageToggle"/>
+        <label for="languageToggle" class="js-actionClick" data-action="language-open">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="currentColor"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z"/></svg>
+          <span>Русский</span>
+        </label>
+        <ul class="language-menu">
+          <li><a href="/" class="js-actionClick" data-action="language-change" data-action-param="1">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
-    <!-- Program Parts: Postcards -->
-    <section class="parts-section">
-      <div class="section-title-wrap">
-        <span class="section-tag">Программа вечера</span>
-        <h2 class="section-title">Концерт в двух частях с антрактом</h2>
-      </div>
-
-      <div class="postcards-container">
-        <!-- Part 1 -->
-        <div class="postcard">
-          <div class="postcard-inner">
-            <div class="postcard-front">
-              <span class="card-num">Часть I</span>
-              <h3 class="card-title">Открытие</h3>
-              <span class="card-prompt">Наведите, чтобы прочитать</span>
-            </div>
-            <div class="postcard-back">
-              <p class="card-desc">Голос Перукуа в сопровождении симфонического оркестра открывает пространство, в котором можно отпустить все лишнее, снять социальные маски и позволить себе наслаждаться вечером и красивыми состояниями.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Intermission -->
-        <div class="postcard">
-          <div class="postcard-inner">
-            <div class="postcard-front">
-              <span class="card-num">Антракт</span>
-              <h3 class="card-title">Встреча</h3>
-              <span class="card-prompt">Наведите, чтобы прочитать</span>
-            </div>
-            <div class="postcard-back">
-              <p class="card-desc">Отличное время, чтобы осмыслить пережитое, выпить чаю, почувствовать новые ощущения, обменяться впечатлениями или познакомиться с интересными, близкими по состоянию людьми.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Part 2 -->
-        <div class="postcard">
-          <div class="postcard-inner">
-            <div class="postcard-front">
-              <span class="card-num">Часть II</span>
-              <h3 class="card-title">Расширение</h3>
-              <span class="card-prompt">Наведите, чтобы прочитать</span>
-            </div>
-            <div class="postcard-back">
-              <p class="card-desc">Новые песни и любимые хиты в ярких оркестровых обработках. Кульминация вечера — единение в общем поле звука! Самое время использовать эту обильную энергетику для своего наполнения.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Polaroid Testimonials -->
-    <section class="reviews-section">
-      <div class="section-title-wrap">
-        <span class="section-tag">Звезды о Перукуа</span>
-        <h2 class="section-title">Мнения и отзывы тех, кто слышал этот голос</h2>
-      </div>
-
-      <div class="reviews-grid">
-        <div class="polaroid-card">
-          <div class="polaroid-img">ИХ</div>
-          <h4 class="polaroid-caption">Ирина Хакамада</h4>
-          <p class="polaroid-sub">«Ее голос творит чудеса»</p>
-        </div>
-
-        <div class="polaroid-card">
-          <div class="polaroid-img">СК</div>
-          <h4 class="polaroid-caption">Сати Казанова</h4>
-          <p class="polaroid-sub">«Женственнее и глубже нет»</p>
-        </div>
-
-        <div class="polaroid-card">
-          <div class="polaroid-img">АЧ</div>
-          <h4 class="polaroid-caption">Анфиса Чехова</h4>
-          <p class="polaroid-sub">«Она меняет жизни навсегда»</p>
-        </div>
-
-        <div class="polaroid-card">
-          <div class="polaroid-img">ДП</div>
-          <h4 class="polaroid-caption">Дэва Премал</h4>
-          <p class="polaroid-sub">«Сияющий сутью природы голос»</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Concert Facts -->
-    <section class="facts-section">
-      <div class="section-title-wrap">
-        <span class="section-tag">Особое воздействие</span>
-        <h2 class="section-title">Сила живого голоса</h2>
-      </div>
-
-      <div class="facts-grid">
-        <div class="fact-card">
-          <div class="fact-num">8 октав</div>
-          <p class="fact-desc">Диапазон голоса Перукуа с мульти-обертонами. Вибрационная волна окутывает тело на частотах от 50 Гц до 11 812 Гц.</p>
-        </div>
-
-        <div class="fact-card">
-          <div class="fact-num">до 14х</div>
-          <p class="fact-desc">Повышение адаптивных сил и общей энергетики организма при нахождении в поле живого звука. Подтверждено тестами.</p>
-        </div>
-
-        <div class="fact-card">
-          <div class="fact-num">Глубина</div>
-          <p class="fact-desc">Голос обладает способностью проникать в подсознание, мягко обходя психологические защиты и убирая старые блокировки.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-      <div class="section-title-wrap">
-        <span class="section-tag">Вопросы и ответы</span>
-        <h2 class="section-title">Что нужно знать о концерте</h2>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="faq-question">Подойдет ли мне этот концерт, если я никогда раньше не была у Перукуа?</div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Да, конечно. Концерт «Встреча с Собой» — это мягкое, красивое погружение в целую палитру ярких переживаний. Никакой специальной подготовки или предварительного знакомства с практиками не требуется.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Стоит ли мне идти, если я уже была на ее выступлениях?</div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Разумеется! Это совершенно новая программа с оркестром — новые аранжировки, новые переживания, эмоции и инсайты. Прекрасный вечер для обновления и наполнения в кругу близких по духу людей.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Можно ли приходить мужчинам?</div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Нужно! Мужчины получают колоссальное удовольствие от роскошного музыкального звучания оркестра и попадания в красивое, гармоничное женское пространство. После этого вечера уровень понимания и восхищения вами только возрастет.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Стоит ли одеться как-то по-особенному?</div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Это не обязательно, но безумно приятно! Надевайте ваши самые красивые платья, элегантные наряды. Давайте создадим настоящий праздник красоты и наполним этим состоянием Кремлевский Дворец.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Можно ли взять с собой маму?</div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Да, это станет для нее великолепным подарком. Пережить встречу с собой никогда не поздно, и этот опыт сделает ваши семейные отношения еще более теплыми, глубокими и наполненными любовью.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Question Banner -->
-      <div class="faq-banner">
-        <h3>Остались вопросы?</h3>
-        <p>Если у вас возникли вопросы по местам, билетам или программе концерта — напишите нам в мессенджер.</p>
-        <a href="https://vk.com/im?sel=-12345" target="_blank" class="faq-banner-btn">Задать вопрос</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Final CTA Footer -->
-  <section class="footer-cta-section">
-    <h2 class="footer-logo">PERUQUOIS</h2>
-    <p class="footer-subtitle">Встреча с Собой — Твой новый шаг к внутренней гармонии</p>
-    <a href="https://kremlinpalace.org/buy-tks/604340" target="_blank" class="hero-cta">ВЫБРАТЬ МОЕ МЕСТО</a>
-  </section>
-
+  <!-- Accordion FAQ Script -->
   <script>
-    // FAQ Accordions logic
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      question.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const wasActive = item.classList.contains('faq-item_active');
+        
         // Close all items
-        faqItems.forEach(i => i.classList.remove('active'));
-        // If clicked item was not active, open it
-        if (!isActive) {
-          item.classList.add('active');
+        document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('faq-item_active'));
+        
+        // Toggle current item
+        if (!wasActive) {
+          item.classList.add('faq-item_active');
         }
       });
     });
   </script>
+
+  <!-- Google Analytics & Advertising Trackers -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MN52RWRY2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2MN52RWRY2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194990079-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-194990079-1');
+  </script>
+  <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?169",t.onload=function(){VK.Retargeting.Init("VK-RTRG-921713-gdzoy"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script>
+  <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-921713-gdzoy" style="position:fixed; left:-999px;" alt=""/></noscript>
+  
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3375775", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src="https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3375775;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3691830", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src="https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3691830;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+
+  <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript" > 
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(36485560, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"dataLayer" }); 
+  </script> 
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(43960959, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/43960959" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?162",t.onload=function(){VK.Retargeting.Init("VK-RTRG-7553-9F9MO"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-7553-9F9MO" style="position:fixed; left:-999px;" alt=""/></noscript>
+
 </body>
 </html>

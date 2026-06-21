@@ -1,5 +1,5 @@
 /* Peruquois Modern Design System & Stylesheet */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Tenor+Sans&display=swap');
 
 :root {
   --bg-primary: #12100f;
@@ -12,8 +12,8 @@
   --text-secondary: #b0a499;
   --text-muted: #786f66;
   
-  --font-headings: 'Cormorant Garamond', serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-headings: 'Forum', serif;
+  --font-body: 'Tenor Sans', sans-serif;
   
   --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.2s ease;
@@ -30,9 +30,19 @@ body {
   color: var(--text-primary);
   font-family: var(--font-body);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.75; /* Slightly increased for light-on-dark text readability */
+  font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  text-wrap: balance;
+}
+
+p, li, blockquote, span {
+  text-wrap: pretty;
 }
 
 /* Background Energy Blob Animation */

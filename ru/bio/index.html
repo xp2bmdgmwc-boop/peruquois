@@ -1,117 +1,349 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-language-id="2">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Биография Перукуа. История жизни певицы, названной Голосом Матери Земли.">
-  <title>Перукуа — Биография (Kinfolk Style)</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8"/>
+  <title>Биография Перукуа</title>
+  <meta name="facebook-domain-verification" content="kdbkjkzxedlanq5jg2w0dafw5hteee" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/site-ru.webmanifest?v=1">
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+  <meta name="apple-mobile-web-app-title" content="Peruquois">
+  <meta name="application-name" content="Peruquois">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="/js/core.js"></script>
+  <script src="/js/stats.js"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="nav-container">
-      <a href="/" class="logo">PERUQUOIS<span>.</span></a>
-      <a href="/" class="back-link">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Назад на главную
+  <!-- Dynamic Energy Blobs (GPU Accelerated CSS Blur) -->
+  <div class="energy-bg">
+    <div class="energy-blob blob-1"></div>
+    <div class="energy-blob blob-2"></div>
+    <div class="energy-blob blob-3"></div>
+  </div>
+
+  <!-- Transparent Floating Header Navigation -->
+  <nav class="nav-main showAnimation">
+    <label for="menuToggle" class="nav-main__toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18"><g fill="#ffffff"><rect width="26" height="4" rx="1"/><rect width="26" height="4" y="7" rx="1"/><rect width="26" height="4" y="14" rx="1"/></g></svg>
+    </label>
+    <input type="checkbox" id="menuToggle"/>
+    <a href="/ru/" class="js-link nav-main__logo">Перукуа</a>
+    <ul class="nav-main__items">
+      <li><a href="/ru/bio/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="7">Био</a></li>
+      <li><a href="/ru/audio/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="1">Музыка</a></li>
+      <li><a href="/ru/video/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="2">Видео</a></li>
+      <li><a href="/ru/courses/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="8">Онлайн-курсы</a></li>
+      <li><a href="/ru/events/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="10">События</a></li>
+      <li><a href="/ru/contacts/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="40">Контакты</a></li>
+    </ul>
+    <div class="nav-right">
+      <a title="Мои заказы" href="/ru/user/" class="js-link nav-main__account">Мои заказы</a>
+      <a title="" href="/ru/cart/" class="js-link nav-main__cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"/></svg>
+        <sup id="js-cartCounter" style="display: none;">0</sup>
       </a>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <!-- Bio Hero Section -->
-    <section class="bio-hero">
+  <section class="landing">
+    <header class="landing__header">
       <span class="bio-tag">Музыка и дух</span>
-      <h1 class="bio-title">Перукуа</h1>
-      <p class="bio-subtitle">«Голос Перукуа глубокий и трогательный, сияющий в мир самой сутью женской природы»</p>
-    </section>
-
-    <!-- Editorial Asymmetric Section 1 -->
-    <section class="editorial-section">
-      <div class="editorial-quote">
-        «Женственнее и глубже я ничего не слышала! Я в большом восторге от нее, ее голоса и энергетики!»
-        <cite>— Сати Казанова, певица</cite>
+      <h1>Перукуа</h1>
+    </header>
+    
+    <article class="landing__content">
+      <!-- Bio Hero Section -->
+      <div class="bio-hero-block">
+        <img width="1860" height="1586" src="/i/content/7/DC5009A11E8F9583.jpg" class="bio-main-portrait" alt="Перукуа"/>
+        <div class="bio-quote-highlight">
+          <h2>Перукуа сейчас</h2>
+          <blockquote>
+            «Голос Перукуа глубокий и трогательный, сияющий в мир самой сутью женской природы»
+            <cite>— Дэва Премал</cite>
+          </blockquote>
+          <ul class="bio-highlights">
+            <li>Исполнительница #1 в жанре World Music в Австралии*</li>
+            <li>Исполнительница самой женственной музыки на планете</li>
+            <li>Ведущая самых больших в мире практических семинаров для женщин**</li>
+            <li>Автор и композитор своих песен, а также создательница целого ряда популярных практик для женщин</li>
+          </ul>
+        </div>
       </div>
-      <div class="editorial-text">
+
+      <!-- Russia Presence Section -->
+      <div class="bio-russia-block">
+        <div class="section-title-wrap">
+          <h2>Перукуа в России</h2>
+          <blockquote>
+            «Я в большом восторге от нее и ее энергетики, от ее голоса! Женственнее и глубже я ничего не слышала!»
+            <cite>— Сати Казанова</cite>
+          </blockquote>
+        </div>
+        
+        <ul class="bio-russia-list">
+          <li>На счету Перукуа 8 аншлаговых концертов/концертов-практик/концертов-медитаций в Крокус Сити Холл.</li>
+          <li>В 2024 году Перукуа впервые собрала аншлаговый концерт с оркестром в Кремлевском Дворце.</li>
+          <li>В качестве звездной гостьи Перукуа выступала на крупнейшем в мире бизнес форуме Synergy Global Forum в СК «Олимпийский», который попал в книгу рекордов Гиннеса.</li>
+          <li>Перукуа выступала на ВДНХ в рамках городской программы «Лето в Москве», организованной Правительством Москвы.</li>
+          <li>Перукуа — авторитетный эксперт по вопросам, связанным с проблемами женщин, чьи материалы регулярно публикуются в крупнейших российских СМИ: Woman.ru, Kleo.ru, Vogue, Cosmopolitan, The Voice, Shape, Yoga Journal, Вечерняя Москва и пр.</li>
+          <li>Интервью с Перукуа выходили на популярных телеканалах и радиостанциях: «Первый Канал», Россия 1, ТНТ, Россия 24, RT, СТС, МУЗ-ТВ, Пятница, Маяк, Love Radio, Романтика и др.</li>
+          <li>Перукуа была приглашенной звездой финала программы «Что? Где? Когда?» (Первый), гостьей одного из выпусков Comedy Club (ТНТ), гостьей программы «Малахов» (Россия 1), гостьей «Шоу Воли» (ТНТ) и пр.</li>
+          <li>Со своими выступлениями посетила более 15 городов, выступая на лучших площадках регионов.</li>
+        </ul>
+      </div>
+
+      <!-- Photo Scroller Gallery (12 Images) -->
+      <div class="gallery-scroller-wrap">
+        <h3>Фотогалерея</h3>
+        <ul class="contentScroller">
+          <li><img width="1070" height="1383" src="/i/content/7/D48E817ECB7867EA.jpeg" alt="Перукуа фото 1"></li>
+          <li><img width="746" height="1054" src="/i/content/7/AE815BC399B8A207.png" alt="Перукуа фото 2"></li>
+          <li><img width="1006" height="1280" src="/i/content/7/5ABF411C2BC3699E.jpeg" alt="Перукуа фото 3"></li>
+          <li><img width="780" height="1134" src="/i/content/7/CE1EE57790EA900B.jpeg" alt="Перукуа фото 4"></li>
+          <li><img width="1860" height="3508" src="/i/content/7/2C507F74D2F32D31.jpg" alt="Перукуа фото 5"></li>
+          <li><img width="922" height="1112" src="/i/content/7/0116DD92107E95B9.png" alt="Перукуа фото 6"></li>
+          <li><img width="758" height="1024" src="/i/content/7/7EE3E0D1A7F58AEF.jpeg" alt="Перукуа фото 7"></li>
+          <li><img width="757" height="1072" src="/i/content/7/9CA5732ABDE42A10.jpeg" alt="Перукуа фото 8"></li>
+          <li><img width="1058" height="1358" src="/i/content/7/3DAADABDE0EA3245.png" alt="Перукуа фото 9"></li>
+          <li><img width="794" height="1148" src="/i/content/7/2B697C4EC0B2B0C8.png" alt="Перукуа фото 10"></li>
+          <li><img width="1860" height="3256" src="/i/content/7/D1E9F95F0A2A681A.jpg" alt="Перукуа фото 11"></li>
+          <li><img width="862" height="1280" src="/i/content/7/4467D0CBA5FFCA4B.jpeg" alt="Перукуа фото 12"></li>
+        </ul>
+      </div>
+
+      <!-- Path & Methodology Section -->
+      <div class="bio-path-block">
         <h2>Кратко о Перукуа</h2>
-        <p>Получив великолепное джазовое образование, она впоследствии интегрировала в свою музыку все самое лучшее из соула, мелодий коренных американских индейцев, классической индийской музыки, ближневосточных мотивов и битов электронной музыки. Она составила уникальную музыкальную композицию, пронизанную тонкими нотами женской чувственности и глубины.</p>
-        <p>За ее бесподобный вокал, выражающий самую сущность женской природы, Перукуа часто называют Голосом Матери Земли, Голосом Сокровенной Женственности и Голосом Богини. Безмолвие в звук, ее голос обладает силой останавливать время и открывать врата мистерии.</p>
+        <blockquote>
+          «Ее вокал обладает такой истинной первородной женской мощью, что он легко вынесет вам мозг, оставив место для настоящей осознанности»
+          <cite>— Митен</cite>
+        </blockquote>
+        
+        <p>Получив великолепное джазовое образование, она впоследствии интегрировала в свою музыку все самое лучшее из соула, мелодий коренных американских индейцев, классической индийской музыки, ближневосточных мотивов и битов электронной музыки, составив уникальную музыкальную композицию, пронизанную тонкими нотами женской чувственности и глубины.</p>
+        <p>За ее бесподобный вокал, выражающий самую сущность женской природы звука Перукуа часто называют Голос Матери Земли, Голос Сокровенной Женственности, Голос Богини. Безмолвие в звук, ее голос обладает силой останавливать время и открывать врата мистерии.</p>
+        <p>Автор музыки и текстов своих песен, Перукуа выражает через свои произведения саму суть того что означает быть живым человеком страстно стремящимся к любви, к тотальному пробуждению жизни.</p>
+        <p>На счету Перукуа 11 альбомов и 18 международных концертных туров. Перукуа является автором таких популярных методик как «Вокальная Йога», «Эмоциональное Очищение» и др.</p>
+        
+        <blockquote>
+          «Это потрясающе! Отличная музыка. Просто супер! В стиле лучших работ команды Питера Гэбриэла»
+          <cite>— Владимир Шахрин, лидер группы Чайф</cite>
+        </blockquote>
       </div>
-    </section>
 
-    <!-- Asymmetric Editorial Gallery -->
-    <section class="gallery-layout">
-      <div class="gallery-item"></div>
-      <div class="gallery-item" style="margin-top: 3rem;"></div>
-      <div class="gallery-item"></div>
-    </section>
-
-    <!-- Editorial Asymmetric Section 2 -->
-    <section class="editorial-section" style="margin-bottom: 6rem;">
-      <div class="editorial-text">
-        <h2>Творческий путь</h2>
-        <p>Перукуа является автором музыки и текстов всех своих песен. Через произведения она выражает саму суть того, что означает быть живым человеком, страстно стремящимся к любви, гармонии и тотальному пробуждению жизни.</p>
-        <p>На сегодняшний день на счету Перукуа 11 альбомов и 18 международных концертных туров. Она признана одним из ведущих женских лидеров трансформации через звук, помогая тысячам женщин обрести свой сокровенный голос.</p>
-      </div>
-      <div class="editorial-quote" style="border-left: 2px solid var(--color-accent); padding-left: 2rem;">
-        «Ее вокал обладает такой истинной первородной женской мощью, что он легко вынесет вам мозг, оставив место для настоящей осознанности»
-        <cite>— Митен, музыкант и композитор</cite>
-      </div>
-    </section>
-
-    <!-- Album & Method Index List -->
-    <section class="index-section">
-      <div class="index-header">
-        <h2>Проекты & Методики</h2>
-      </div>
-      <div class="index-grid">
-        <ul class="index-list">
-          <li class="index-item">
-            <span class="index-name">Вокальная Йога</span>
-            <span class="index-meta">Авторский метод</span>
-          </li>
-          <li class="index-item">
-            <span class="index-name">Эмоциональное Очищение</span>
-            <span class="index-meta">Авторский метод</span>
-          </li>
-          <li class="index-item">
-            <span class="index-name">11 Альбомов</span>
-            <span class="index-meta">Дискография</span>
-          </li>
+      <!-- Discography Section -->
+      <div class="bio-discography-block">
+        <h2>Дискография</h2>
+        <blockquote>
+          «Вау! Какая страсть! Это действительно высший класс! Просто влюбился в уникальное сочетание различных музыкальных культур. Перукуа бесконечно талантлива»
+          <cite>— Питер Рафэлсон, музыкальный продюсер (Madonna, Britney Spears, Elton John, The Corrs…)</cite>
+        </blockquote>
+        
+        <h3>Сольные Музыкальные Альбомы</h3>
+        <ul class="discography-list">
+          <li>Awaken the Snake — 2000</li>
+          <li>The Sacred Opening — 2003</li>
+          <li>Love's Deepest Calling — 2006</li>
+          <li>Opening the Sacred Voice — 2009</li>
+          <li>The Original Essence — 2014</li>
+          <li>She LIVE — 2016</li>
+          <li>Gayatri Mantra and Mantra OM as Practice — 2017</li>
+          <li>Original Women's Healing Mantras — 2019</li>
+          <li>I am Woman — 2019</li>
+          <li>Altering States — 2023</li>
         </ul>
-        <ul class="index-list">
-          <li class="index-item">
-            <span class="index-name">18 Концертных туров</span>
-            <span class="index-meta">Международный опыт</span>
-          </li>
-          <li class="index-item">
-            <span class="index-name">Кремлевский Дворец</span>
-            <span class="index-meta">Концерты в РФ</span>
-          </li>
-          <li class="index-item">
-            <span class="index-name">Семинары (до 6500 участниц)</span>
-            <span class="index-meta">Женские практики</span>
-          </li>
+        
+        <h3>Совместные альбомы и синглы</h3>
+        <ul class="discography-list">
+          <li>Breathing Love (with Praful) — 2010</li>
+          <li>Here I Am Beloved (maxi-single with Praful) — 2011</li>
         </ul>
       </div>
-    </section>
 
-    <!-- Testimonials Slider Block -->
-    <section class="reviews-section">
-      <div class="review-quote-block">
-        <p>«Это потрясающе! Отличная музыка. Просто супер! В стиле лучших работ команды Питера Гэбриэла»</p>
-        <cite>— Владимир Шахрин, лидер группы Чайф</cite>
+      <!-- Stars Testimonials Scroller -->
+      <div class="stars-block">
+        <h2>Звезды о музыке Перукуа</h2>
+        <ul class="contentScroller stars-scroller">
+          <li>
+            <img src="/i/content/7/2148DFBAF61A692C.jpeg" alt="Сати Казанова">
+            <div class="star-quote">
+              <p>«Женственнее и глубже я никого не встречала.»</p>
+              <h4>САТИ КАЗАНОВА</h4>
+            </div>
+          </li>
+          <li>
+            <img src="/i/content/7/47C1AFA2838F4215.jpeg" alt="Ирина Хакамада">
+            <div class="star-quote">
+              <p>«Перукуа великолепная! Ее энергетика и голос творят чудеса! Это очень трансцендентный опыт.»</p>
+              <h4>ИРИНА ХАКАМАДА</h4>
+            </div>
+          </li>
+          <li>
+            <img src="/i/content/7/AC4F35AAD6782355.jpeg" alt="Дэва Премал">
+            <div class="star-quote">
+              <p>«Голос Перукуа глубокий и трогательный, сияющий в мир самой сутью женской природы.»</p>
+              <h4>ДЭВА ПРЕМАЛ</h4>
+            </div>
+          </li>
+          <li>
+            <img src="/i/content/7/1BCD8D7714A1B9C4.jpeg" alt="Митен">
+            <div class="star-quote">
+              <p>«Ее вокал обладает такой истинной первородной женской мощью, что он легко вынесет вам мозг, оставив место для настоящей осознанности.»</p>
+              <h4>МИТЕН</h4>
+            </div>
+          </li>
+          <li>
+            <img src="/i/content/7/5A325D47C23F6FD6.jpeg" alt="Снатам Каур">
+            <div class="star-quote">
+              <p>«Волшебный голос, останавливающий время. Он настраивает на самые высшие состояния.»</p>
+              <h4>СНАТАМ КАУР</h4>
+            </div>
+          </li>
+          <li>
+            <img src="/i/content/7/31AC7CB5DBBB8AB0.jpeg" alt="Ирена Понарошку">
+            <div class="star-quote">
+              <p>«Я получила огромное удовольствие! Одновременно расслабилась и наполнилась свежей энергетикой.»</p>
+              <h4>ИРЕНА ПОНАРОШКУ</h4>
+            </div>
+          </li>
+          <li>
+            <img src="/i/content/7/07153327214A3FA7.jpeg" alt="Крейг Прюсс">
+            <div class="star-quote">
+              <p>«Чистые настоящие эмоции! Ее музыка затрагивает глубинные человеческие ценности.»</p>
+              <h4>КРЕЙГ ПРЮСС</h4>
+            </div>
+          </li>
+        </ul>
       </div>
-    </section>
-  </main>
 
-  <!-- Editorial Footer -->
+      <!-- Workshop Reviews Section -->
+      <div class="reviews-block">
+        <h2>Отзывы участниц семинаров Перукуа</h2>
+        <ul class="contentScroller review-scroller">
+          <li>
+            <img src="/i/content/7/48908444FF0B7DD7.jpeg" alt="Анфиса Чехова">
+            <div class="review-quote">
+              <p>«Я с сомнением отношусь к расплодившимся коучам, пересказывающим чужие мысли, покупающим себе репутацию. Перукуа -- другая. От нее исходит мудрость, тихое глубинное счастье. Я знаю по своему опыту, она меняет жизни женщин навсегда.»</p>
+              <h4>АНФИСА ЧЕХОВА</h4>
+            </div>
+          </li>
+          <li>
+            <img src="/i/content/7/69F9EB35D4659578.jpeg" alt="Наталья Османн">
+            <div class="review-quote">
+              <p>«Это настоящая магия, невероятное волшебство, Энергия чувствуется очень сильно даже онлайн. Несравненные ощущения. Для меня это знакомство с новой собой, глубокое соединение.»</p>
+              <h4>НАТАЛЬЯ ОСМАНН</h4>
+            </div>
+          </li>
+          <li>
+            <img src="/i/content/7/5850944B9D8A4323.jpeg" alt="Кира Сорокина">
+            <div class="review-quote">
+              <p>«Красивое яркое путешествие к себе, своей силе, красоте, изобилию. Перукуа — волшебница! Она так тонко, чисто, заботливо и с любовью передает свои знания, что они без усилий раскрывают твою настоящую природу.»</p>
+              <h4>КИРА СОРОКИНА</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bio-notes">
+        <p class="note-item">* По данным рейтинга ReverbNation</p>
+        <p class="note-item">** На практические оффлайн-семинары Перукуа приходит до 6500 участниц</p>
+      </div>
+    </article>
+  </section>
+
   <footer>
-    <h2 class="footer-logo">PERUQUOIS</h2>
-    <p class="footer-text">Голос Сокровенной Женственности · 2026</p>
+    <div class="footer-container">
+      <div class="footer-top">
+        <h2 class="footer-logo">PERUQUOIS</h2>
+        <p class="footer-cop">&copy; 2026 Перукуа. Все права защищены.</p>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="/ru/support">Поддержка</a></li>
+        <li><a href="/ru/partners/">Партнеры</a></li>
+        <li><a href="/ru/personal/" target="_blank">Согласие на обработку персональных данных</a></li>
+        <li><a href="/ru/agreement/" target="_blank">Оферта Договора оказания услуг</a></li>
+        <li><a href="mailto:support@peruquois.com">Связаться с нами</a></li>
+      </ul>
+      <nav class="footer__language">
+        <input type="checkbox" id="languageToggle"/>
+        <label for="languageToggle" class="js-actionClick" data-action="language-open">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="currentColor"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z"/></svg>
+          <span>Русский</span>
+        </label>
+        <ul class="language-menu">
+          <li><a href="/" class="js-actionClick" data-action="language-change" data-action-param="1">English</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MN52RWRY2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2MN52RWRY2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194990079-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-194990079-1');
+  </script>
+  <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?169",t.onload=function(){VK.Retargeting.Init("VK-RTRG-921713-gdzoy"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script>
+  <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-921713-gdzoy" style="position:fixed; left:-999px;" alt=""/></noscript>
+  
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3375775", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src="https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3375775;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3691830", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src="https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3691830;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+
+  <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript" > 
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(36485560, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"dataLayer" }); 
+  </script> 
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(43960959, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/43960959" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>

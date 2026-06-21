@@ -1,152 +1,394 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-language-id="2">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Музыка и практики Перукуа. Альбомы, исцеляющие мантры, музыка для женских кругов и родов.">
-  <title>Перукуа — Музыка & Практики (Deva Premal Style)</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8"/>
+  <title>Музыка и&nbsp;Практики Перукуа</title>
+  <meta name="description" content="Музыка и Практики Перукуа"/>
+  <meta name="keywords" content="Музыка и Практики Перукуа"/>
+  <meta name="facebook-domain-verification" content="kdbkjkzxedlanq5jg2w0dafw5hteee" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/site-ru.webmanifest?v=1">
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+  <meta name="apple-mobile-web-app-title" content="Peruquois">
+  <meta name="application-name" content="Peruquois">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="/css/plyr.css?rnd=50"/>
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  
+  <script src="/js/core.js"></script>
+  <script src="/js/stats.js"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="nav-container">
-      <a href="/" class="logo">PERUQUOIS<span>.</span></a>
-      <a href="/" class="back-link">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-        Назад на главную
+  <!-- Dynamic Energy Blobs (GPU Accelerated CSS Blur) -->
+  <div class="energy-bg">
+    <div class="energy-blob blob-1"></div>
+    <div class="energy-blob blob-2"></div>
+    <div class="energy-blob blob-3"></div>
+  </div>
+
+  <!-- Transparent Floating Header Navigation -->
+  <nav class="nav-main showAnimation">
+    <label for="menuToggle" class="nav-main__toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18"><g fill="#ffffff"><rect width="26" height="4" rx="1"/><rect width="26" height="4" y="7" rx="1"/><rect width="26" height="4" y="14" rx="1"/></g></svg>
+    </label>
+    <input type="checkbox" id="menuToggle"/>
+    <a href="/ru/" class="js-link nav-main__logo">Перукуа</a>
+    <ul class="nav-main__items">
+      <li><a href="/ru/bio/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="7">Био</a></li>
+      <li><a href="/ru/audio/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="1">Музыка</a></li>
+      <li><a href="/ru/video/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="2">Видео</a></li>
+      <li><a href="/ru/courses/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="8">Онлайн-курсы</a></li>
+      <li><a href="/ru/events/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="10">События</a></li>
+      <li><a href="/ru/contacts/" class="js-actionClick js-link" data-action="nav-item-click" data-action-param="40">Контакты</a></li>
+    </ul>
+    <div class="nav-right">
+      <a title="Мои заказы" href="/ru/user/" class="js-link nav-main__account">Мои заказы</a>
+      <a title="" href="/ru/cart/" class="js-link nav-main__cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"/></svg>
+        <sup id="js-cartCounter" style="display: none;">0</sup>
       </a>
     </div>
-  </header>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="music-hero">
+    <div class="music-hero__bg">
+      <img src="/i/features/section-audio/header-1.jpg" srcset="
+      /i/features/section-audio/header-1.jpg 750w, /i/features/section-audio/header-2.jpg 960w,
+      /i/features/section-audio/header-3.jpg 1260w,
+      /i/features/section-audio/header.jpg 1440w"
+      class="feature_image feature_image__header" alt="Музыка Перукуа"/>
+    </div>
+    <header class="music-hero__header">
+      <h1>Музыка для твоего вдохновения</h1>
+      <h4>от исполнительницы самой женственной музыки на планете</h4>
+    </header>
+  </section>
 
   <main>
-    <!-- Music Hero Section -->
-    <section class="music-hero">
-      <span class="music-tag">Голос Земли</span>
-      <h1 class="music-title">Музыка для твоего вдохновения</h1>
-      <p class="music-desc">Погрузитесь в чувственные вибрации исцеляющих мантр и песен от исполнительницы самой женственной музыки на планете.</p>
+    <!-- Stats block -->
+    <section class="stats-overview">
+      <ul class="feature">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor"><path d="M192 95.95c-52.93 0-96 43.07-96 96s43.07 96 96 96 96-43.07 96-96-43.06-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm175.63 16.38c14.06-14.31 19.59-35.33 14.47-54.86-6.39-24.2-6.39-20.45 0-44.69 5.13-19.52-.41-40.53-14.47-54.86-17.58-17.72-15.57-14.69-21.91-38.59-5.15-19.63-20.37-35.08-39.72-40.34-23.3-6.32-20.62-4.58-37.75-22.22-14.22-14.42-35.12-20.08-54.53-14.82-23.5 6.51-20.1 6.41-43.47 0-19.25-5.31-40.28.4-54.5 14.85-17.3 17.67-14.21 15.77-37.72 22.19-19.37 5.26-34.59 20.71-39.75 40.32-6.36 24.04-4.38 20.87-21.91 38.62C2.31 132.25-3.22 153.27 1.91 172.8c6.39 24.17 6.39 20.42 0 44.69-5.13 19.52.41 40.53 14.47 54.86 17.58 17.72 15.57 14.69 21.91 38.59 2.01 7.64 5.91 14.36 10.62 20.38L1.2 448.7c-4.31 10.57 3.51 22.04 14.79 22.04.55 0-2.91.12 53.32-2.03L105.56 507c3.22 3.4 7.42 5 11.58 5 6.17 0 12.23-3.53 14.86-9.96l52.45-129.03a23.346 23.346 0 0 1 15.11-.01L252 502.04c2.62 6.43 8.69 9.96 14.86 9.96 4.16 0 8.36-1.6 11.58-5l36.25-38.28c56.23 2.15 52.77 2.03 53.32 2.03 11.28 0 19.1-11.47 14.79-22.04l-47.7-117.37c4.71-6.02 8.61-12.74 10.62-20.37 6.36-24.06 4.38-20.89 21.91-38.64zM111.72 466.95c-22.59-23.86-16.56-17.49-29.13-30.77-18.3.7-9.45.36-42.41 1.63l35.55-87.48c.79.26 1.47.75 2.28.97 21.87 5.86 20.46 4.6 31.59 15.91 9.94 10.14 22.79 15.57 35.96 16.5l-33.84 83.24zm232.11-29.15c-32.91-1.26-24.13-.92-42.41-1.62-12.56 13.27-6.54 6.91-29.13 30.77l-33.9-83.4c13.21-.91 26.06-6.21 36.02-16.35 11.41-11.61 9.83-10.19 31.59-15.91.81-.22 1.49-.71 2.28-.96l35.55 87.47zm-29.05-134.99c-2.25 8.58-8.84 15.33-17.22 17.61-23.62 6.25-28.39 6.45-45.97 24.37-8 8.11-20.19 9.61-29.75 3.48-18.13-11.44-41.56-11.45-59.69.02-9.5 6.03-21.75 4.62-29.75-3.52-17.38-17.68-22.12-17.95-45.97-24.36-8.38-2.28-14.97-9.03-17.22-17.62-8.06-30.63-7.53-30.19-30.03-52.87-6.19-6.31-8.63-15.62-6.34-24.31 8.15-30.47 8.2-30.48 0-60.95-2.28-8.69.16-18 6.34-24.3 22.42-22.7 21.94-22.06 30.03-52.91 2.25-8.58 8.84-15.33 17.22-17.59 30.79-8.41 29.68-7.8 52.13-30.62 5.2-5.31 13.82-8.96 23.28-6.41 30.46 8.38 29.85 8.4 60.28 0 8.19-2.27 17.19.19 23.31 6.37 22.29 22.87 21.87 22.44 52.16 30.66 8.34 2.27 14.94 9.02 17.19 17.61 8.06 30.63 7.53 30.19 30.03 52.87 6.19 6.31 8.63 15.62 6.34 24.31-8.19 30.52-8.16 30.54 0 60.95 2.28 8.69-.16 18-6.34 24.3-22.41 22.71-21.94 22.06-30.03 52.91z"/></svg>
+          <span>№1 в жанре World music в Австралии</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M475.78 33.5a122.38 122.38 0 0 0-170.45 2.13l-28.77 28.68a121 121 0 0 0-35.66 85.08L12.06 406.85a47.88 47.88 0 0 0 2 65.71l25.46 25.38a48.27 48.27 0 0 0 65.93 2l150.42-133.6V504a8 8 0 0 0 8 8H280a8 8 0 0 0 8-8V338l75.85-66.08a121.82 121.82 0 0 0 85.37-35.54l25.09-25C523 162.86 525.64 80.79 475.78 33.5zM84.25 476a16.08 16.08 0 0 1-22-.68l-25.44-25.39a16 16 0 0 1-.72-21.86l219.39-246.83 76.4 76.13zM426.5 213.74a89.56 89.56 0 0 1-62.92 26.17h-3.8L273 153.42v-3.78a88.92 88.92 0 0 1 26.27-62.7l11.06-11 127.24 126.77zm33.28-34.14L333.52 53.77A89.34 89.34 0 0 1 459.78 179.6z"/></svg>
+          <span>Исполнительница самой женственной музыки в мире</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z"/></svg>
+          <span>Признанный музыкальный феномен</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M8 224h272a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm152 104a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h144a8 8 0 0 0 8-8zM8 96h272a8 8 0 0 0 8-8V72a8 8 0 0 0-8-8H8a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zM470 1.64l-96.59 31.88C360.72 37.74 352 50 352 64v312.13C331.66 361.28 303.38 352 272 352c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V192l106.12-35.37A32 32 0 0 0 512 126.27V32a32 32 0 0 0-42-30.36zM272 480c-47.14 0-80-25.3-80-48s32.86-48 80-48 80 25.3 80 48-32.86 48-80 48zm208-353.72l-96 32V64h-.56v-.13L480 32z"/></svg>
+          <span>Автор и композитор своих песен</span>
+        </li>
+      </ul>
     </section>
 
-    <!-- Central Wave Player -->
-    <section class="central-player" id="mainPlayer">
-      <div class="player-art"></div>
-      <div class="player-controls">
-        <div class="track-info">
-          <h3>Я Женщина (I Am Woman)</h3>
-          <p>Перукуа · Альбом «Я Женщина»</p>
-        </div>
-        <div class="controls-row">
-          <button class="play-btn" id="playBtn" aria-label="Play">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="playIcon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-          </button>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar-fill"></div>
+    <!-- Reviews Block -->
+    <section class="highlight">
+      <header class="section-header">
+        <h2>Чувственная природа женщины</h2>
+        <h4>В каждом звуке</h4>
+      </header>
+      
+      <ul class="scroller reviews-scroller">
+        <li>
+          <img class="cover cover_review" src="/i/review/7.jpg" alt="Дэва Премал"/>
+          <div class="review-body">
+            <span class="content-list__review">Голос Перукуа глубокий и трогательный, сияющий в мир самой сутью женской природы.</span>
+            <h4 class="content-list__header">Дэва Премал</h4>
+            <p class="content-list__meta">Популярная исполнительница мантр</p>
           </div>
-          <span class="track-time">1:34 / 4:32</span>
-        </div>
-      </div>
+        </li>
+        <li>
+          <img class="cover cover_review" src="/i/review/9.jpg" alt="Крейг Прюсс"/>
+          <div class="review-body">
+            <span class="content-list__review">Чистые настоящие эмоции! Ее музыка затрагивает глубинные человеческие ценности.</span>
+            <h4 class="content-list__header">Крейг Прюсс</h4>
+            <p class="content-list__meta">Музыкальный продюсер, музыкант</p>
+          </div>
+        </li>
+        <li>
+          <img class="cover cover_review" src="/i/review/12.jpg" alt="Снатам Каур"/>
+          <div class="review-body">
+            <span class="content-list__review">Волшебный голос, останавливающий время. Он настраивает на самые высшие состояния.</span>
+            <h4 class="content-list__header">Снатам Каур</h4>
+            <p class="content-list__meta">Популярная исполнительница мантр</p>
+          </div>
+        </li>
+        <li>
+          <img class="cover cover_review" src="/i/review/10.jpg" alt="Том Васингер"/>
+          <div class="review-body">
+            <span class="content-list__review">За свои 35 лет в музыке я никогда не работал с исполнителем, равным Перукуа</span>
+            <h4 class="content-list__header">Том Васингер</h4>
+            <p class="content-list__meta">3-х кратный обладатель премии Грэмми</p>
+          </div>
+        </li>
+        <li>
+          <img class="cover cover_review" src="/i/review/13.jpg" alt="Митен"/>
+          <div class="review-body">
+            <span class="content-list__review">Ее вокал обладает такой истинной первородной женской мощью, что он легко вынесет вам мозг, оставив место для настоящей осознанности</span>
+            <h4 class="content-list__header">Митен</h4>
+            <p class="content-list__meta">Музыкант</p>
+          </div>
+        </li>
+        <li>
+          <img class="cover cover_review" src="/i/review/28.jpg" alt="Владимир Шахрин"/>
+          <div class="review-body">
+            <span class="content-list__review">Это потрясающе! Отличная музыка. Просто супер! В стиле лучших работ команды Питера Гэбриэла</span>
+            <h4 class="content-list__header">Владимир Шахрин</h4>
+            <p class="content-list__meta">Музыкант, Чайф</p>
+          </div>
+        </li>
+        <li>
+          <img class="cover cover_review" src="/i/review/11.jpg" alt="Ирена Понарошку"/>
+          <div class="review-body">
+            <span class="content-list__review">Я получила огромное удовольствие! Одновременно расслабилась и наполнилась свежей энергетикой.</span>
+            <h4 class="content-list__header">Ирена Понарошку</h4>
+            <p class="content-list__meta">Телеведущая, блоггер</p>
+          </div>
+        </li>
+        <li>
+          <img class="cover cover_review" src="/i/review/8.jpg" alt="Ирина Хакамада"/>
+          <div class="review-body">
+            <span class="content-list__review">Перукуа великолепная. Её энергетика и голос творят чудеса.</span>
+            <h4 class="content-list__header">Ирина Хакамада</h4>
+            <p class="content-list__meta">Политик и публицист</p>
+          </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- Albums Grid -->
+    <!-- Albums Catalog -->
     <section class="albums-section">
-      <div class="music-hero" style="margin-bottom: 4rem;">
-        <span class="music-tag">Дискография</span>
-        <h2 class="music-title" style="font-size: 2.2rem;">Альбомы и сборники</h2>
-      </div>
-
-      <div class="albums-grid">
-        <!-- Album 1 -->
-        <div class="album-card">
-          <div class="album-cover"></div>
-          <h3>Музыка Женского Круга</h3>
-          <p>Бесплатный сборник песен для женских кругов, практик и девичников.</p>
-          <div class="album-links">
-            <a href="#" class="streaming-link" title="Spotify">SP</a>
-            <a href="#" class="streaming-link" title="Apple Music">AP</a>
-            <a href="#" class="streaming-link" title="YouTube">YT</a>
-          </div>
-        </div>
-
-        <!-- Album 2 -->
-        <div class="album-card">
-          <div class="album-cover"></div>
-          <h3>Я Женщина</h3>
-          <p>Знаковый альбом Перукуа, который лучше всего характеризует ее послание миру.</p>
-          <div class="album-links">
-            <a href="#" class="streaming-link" title="Spotify">SP</a>
-            <a href="#" class="streaming-link" title="Apple Music">AP</a>
-            <a href="#" class="streaming-link" title="YouTube">YT</a>
-          </div>
-        </div>
-
-        <!-- Album 3 -->
-        <div class="album-card">
-          <div class="album-cover"></div>
-          <h3>ОНА</h3>
-          <p>Запись уникального соло-мюзикла «ОНА», основанного на автобиографии певицы.</p>
-          <div class="album-links">
-            <a href="#" class="streaming-link" title="Spotify">SP</a>
-            <a href="#" class="streaming-link" title="Apple Music">AP</a>
-            <a href="#" class="streaming-link" title="YouTube">YT</a>
-          </div>
-        </div>
-
-        <!-- Album 4 -->
-        <div class="album-card">
-          <div class="album-cover"></div>
-          <h3>Исцеляющие Мантры</h3>
-          <p>Новые исцеляющие женские мантры от Перукуа: древность встречается с духом нового века.</p>
-          <div class="album-links">
-            <a href="#" class="streaming-link" title="Spotify">SP</a>
-            <a href="#" class="streaming-link" title="Apple Music">AP</a>
-            <a href="#" class="streaming-link" title="YouTube">YT</a>
-          </div>
-        </div>
-
-        <!-- Album 5 -->
-        <div class="album-card">
-          <div class="album-cover"></div>
-          <h3>Первородный Источник</h3>
-          <p>Глубокий мистический альбом-притча в 10 композициях, связанных общей историей.</p>
-          <div class="album-links">
-            <a href="#" class="streaming-link" title="Spotify">SP</a>
-            <a href="#" class="streaming-link" title="Apple Music">AP</a>
-            <a href="#" class="streaming-link" title="YouTube">YT</a>
-          </div>
-        </div>
-
-        <!-- Album 6 -->
-        <div class="album-card">
-          <div class="album-cover"></div>
-          <h3>Музыка для родов</h3>
-          <p>Специально подобранный сборник медитативных песен для мягких и гармоничных родов.</p>
-          <div class="album-links">
-            <a href="#" class="streaming-link" title="Spotify">SP</a>
-            <a href="#" class="streaming-link" title="Apple Music">AP</a>
-            <a href="#" class="streaming-link" title="YouTube">YT</a>
-          </div>
-        </div>
-      </div>
+      <header class="section-header">
+        <h2>Мои альбомы</h2>
+      </header>
+      
+      <ul class="list albums-list">
+        <li>
+          <a href="/ru/audio/muzyka-dlya-rodov/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="132">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/132.jpg" alt="Музыка для родов"/>
+            </div>
+            <h4 class="content-list__header">Музыка для родов</h4>
+            <p class="album-desc">Сборник песен Перукуа для родов</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/muzyka-zhenskogo-kruga/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="130">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/130.jpg" alt="Музыка Женского Круга"/>
+            </div>
+            <h4 class="content-list__header">Музыка Женского Круга</h4>
+            <p class="album-desc">Бесплатный сборник песен Перукуа для женских кругов и&nbsp;девичников</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/ya-zhenschina/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="79">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/79.jpg" alt="Я&nbsp;Женщина"/>
+            </div>
+            <h4 class="content-list__header">Я&nbsp;Женщина</h4>
+            <p class="album-desc">Эта фраза, которой Перукуа назвала свой альбом, лучше всего характеризует ее&nbsp;послание миру</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/ona/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="65">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/65.jpg" alt="ОНА"/>
+            </div>
+            <h4 class="content-list__header">ОНА</h4>
+            <p class="album-desc">Этот двойной альбом&nbsp;&mdash; запись уникального проекта Перукуа: соло-мюзикла «ОНА», основанного на&nbsp;удивительной жизни самой исполнительницы</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/istselyayuschie-zhenskie-mantry-ot-perukua/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="64">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/64.jpg" alt="Исцеляющие Женские Мантры от&nbsp;Перукуа"/>
+            </div>
+            <h4 class="content-list__header">Исцеляющие Женские Мантры от&nbsp;Перукуа</h4>
+            <p class="album-desc">Пришло время новых мантр. Древность встречается с&nbsp;духом нового тысячелетия в&nbsp;новых композициях на&nbsp;ЕР&nbsp;Перукуа</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/pervorodniy-istochnik/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="46">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/46.jpg" alt="Первородный источник"/>
+            </div>
+            <h4 class="content-list__header">Первородный источник</h4>
+            <p class="album-desc">Глубокий мистический альбом Перукуа&nbsp;&mdash; важная притча в&nbsp;10&nbsp;песнях, связанных между собой словно главы одной мудрой книги</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/praktika-mantr-gayatri-i-om/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="45">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/45.jpg" alt="Практика мантр Гаятри и&nbsp;ОМ"/>
+            </div>
+            <h4 class="content-list__header">Практика мантр Гаятри и&nbsp;ОМ</h4>
+            <p class="album-desc">Перукуа дает возможность освоить вместе с&nbsp;ней эти две древние мантры в&nbsp;их&nbsp;исконном значении и&nbsp;звучании!</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/dykhanie-lyubvi-perukua-i-praful/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="42">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/42.jpg" alt="Дыхание любви (Перукуа и&nbsp;Прафул)"/>
+            </div>
+            <h4 class="content-list__header">Дыхание любви</h4>
+            <p class="album-desc">Музыка для пробуждения возлюбленных (Перукуа и Прафул)</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/otkryvaya-sokrovenniy-golos/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="40">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/40.jpg" alt="Открывая сокровенный голос"/>
+            </div>
+            <h4 class="content-list__header">Открывая сокровенный голос</h4>
+            <p class="album-desc">Альбом-посвящение женщине и&nbsp;настраивающий на&nbsp;соединение со&nbsp;своей естественностью</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/zov-lyubvi-iz-glubiny/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="39">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/39.jpg" alt="Зов любви из&nbsp;глубины"/>
+            </div>
+            <h4 class="content-list__header">Зов любви из&nbsp;глубины</h4>
+            <p class="album-desc">Чувственный утонченный лаунжевый альбом Перукуа, великолепная фоновая музыка</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/sokrovennoe-otkrytie/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="38">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/38.jpg" alt="Сокровенное Открытие"/>
+            </div>
+            <h4 class="content-list__header">Сокровенное Открытие</h4>
+            <p class="album-desc">Почувствуйте связь с&nbsp;древностью и&nbsp;со&nbsp;своей первородной природой, растворяясь в&nbsp;священных чантах</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/probuzhdenie-zmei/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="37">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/37.jpg" alt="Пробуждение Змеи"/>
+            </div>
+            <h4 class="content-list__header">Пробуждение Змеи</h4>
+            <p class="album-desc">Мощный динамичный экспрессивный альбом, воспламеняющаяся смесь этники, фанка и&nbsp;джаза!</p>
+          </a>
+        </li>
+        <li>
+          <a href="/ru/audio/vot-i-ya-lyubimiy/" class="js-actionClick js-link album-link" data-action="content-click" data-action-param="66">
+            <div class="album-cover-wrap">
+              <img class="cover cover_audio" src="/i/audio/66.jpg" alt="Вот и&nbsp;я,&nbsp;любимый"/>
+            </div>
+            <h4 class="content-list__header">Вот и&nbsp;я,&nbsp;любимый</h4>
+            <p class="album-desc">Этот сингл&nbsp;&mdash; чувственная смесь мистической флейты Прафула и&nbsp;экспрессивного страстного голоса Перукуа</p>
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
 
-  <script>
-    // Play/Pause button interaction logic
-    const playBtn = document.getElementById('playBtn');
-    const player = document.getElementById('mainPlayer');
-    const playIcon = document.getElementById('playIcon');
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <h2 class="footer-logo">PERUQUOIS</h2>
+        <p class="footer-cop">&copy; 2026 Перукуа. Все права защищены.</p>
+      </div>
+      <ul class="footer__nav">
+        <li><a href="/ru/support">Поддержка</a></li>
+        <li><a href="/ru/partners/">Партнеры</a></li>
+        <li><a href="/ru/personal/" target="_blank">Согласие на обработку персональных данных</a></li>
+        <li><a href="/ru/agreement/" target="_blank">Оферта Договора оказания услуг</a></li>
+        <li><a href="mailto:support@peruquois.com">Связаться с нами</a></li>
+      </ul>
+      <nav class="footer__language">
+        <input type="checkbox" id="languageToggle"/>
+        <label for="languageToggle" class="js-actionClick" data-action="language-open">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="currentColor"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z"/></svg>
+          <span>Русский</span>
+        </label>
+        <ul class="language-menu">
+          <li><a href="/" class="js-actionClick" data-action="language-change" data-action-param="1">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
-    playBtn.addEventListener('click', () => {
-      const isPlaying = player.classList.contains('playing');
-      if (isPlaying) {
-        player.classList.remove('playing');
-        playIcon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"></polygon>';
-      } else {
-        player.classList.add('playing');
-        playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>';
-      }
+  <!-- Google Analytics & Trackers -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MN52RWRY2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2MN52RWRY2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194990079-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-194990079-1');
+  </script>
+  <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?169",t.onload=function(){VK.Retargeting.Init("VK-RTRG-921713-gdzoy"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script>
+  <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-921713-gdzoy" style="position:fixed; left:-999px;" alt=""/></noscript>
+  
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3375775", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src="https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3375775;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3691830", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src="https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3691830;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+
+  <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript" > 
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(36485560, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"dataLayer" }); 
+  </script> 
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(43960959, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
     });
   </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/43960959" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?162",t.onload=function(){VK.Retargeting.Init("VK-RTRG-7553-9F9MO"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-7553-9F9MO" style="position:fixed; left:-999px;" alt=""/></noscript>
+
 </body>
 </html>
