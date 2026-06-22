@@ -1089,3 +1089,86 @@ footer {
   background: rgba(230, 199, 142, 0.08);
   color: var(--accent-gold);
 }
+
+/* Header Socials & Language Switcher (Sati Kazanova style) */
+.header-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.header-social-link {
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.header-social-link:hover {
+  color: var(--accent-gold);
+}
+
+.header-social-svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
+}
+
+.header-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.lang-item {
+  color: var(--text-muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--transition-fast);
+}
+
+.lang-item.active {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.lang-item:hover {
+  color: var(--text-primary);
+}
+
+/* Hide mobile socials/lang list item on desktop */
+.mobile-only-menu-item {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  /* Hide them in the top nav-right on mobile */
+  .nav-right .header-socials,
+  .nav-right .header-lang {
+    display: none;
+  }
+  
+  /* Show them inside the mobile drawer */
+  .mobile-only-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .mobile-only-menu-item .header-socials {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+}
+
